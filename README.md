@@ -1,3 +1,3 @@
 ### Chintan Patel
 
-[About me](/blog)
+[About me](http://chintan-patel.github.com/blog)
