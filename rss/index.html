@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:media="http://search.yahoo.com/mrss/"><channel><title><![CDATA[Passion]]></title><description><![CDATA[Stories, Tutorials, Tech updates and News]]></description><link>http://localhost:2368/</link><generator>Ghost 0.7</generator><lastBuildDate>Thu, 04 Feb 2016 04:00:24 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Basic Unix Commands for Geek]]></title><description><![CDATA[Blog is about basic unix commands which every developer must know. These commands will make you feel better and more professional.]]></description><link>http://localhost:2368/basic-unix-commands-for-geek/</link><guid isPermaLink="false">8e4f6c3a-82a8-4d0f-8c8e-fd825420553f</guid><category><![CDATA[unix]]></category><category><![CDATA[commands]]></category><category><![CDATA[vi editor]]></category><dc:creator><![CDATA[Chintan Patel]]></dc:creator><pubDate>Thu, 04 Feb 2016 03:56:41 GMT</pubDate><content:encoded><![CDATA[<h1 id="introduction">Introduction</h1>
+
+<p>This document requires intermediate level of shell commands knowledge. For starters visit <a href="http://mally.stanford.edu/~sr/computing/basic-unix.html">http://mally.stanford.edu/~sr/computing/basic-unix.html</a></p>
+
+<h1 id="benefitsoflearning">Benefits of learning</h1>
+
+<ul>
+<li>Look professional</li>
+<li>Quicker results</li>
+<li>No need of mouse and clicks</li>
+<li>Makes you feel good</li>
+</ul>
+
+<p>Lets get started quickly...</p>
+
+<ol>
+<li><a href="http://localhost:2368/basic-unix-commands-for-geek/#basics">Basics</a>  </li>
+<li><a href="http://localhost:2368/basic-unix-commands-for-geek/#advanced">Advanced</a></li>
+</ol>
+
+<h1 id="basics">Basics</h1>
+
+<h3 id="commands">Commands</h3>
+
+<ul>
+<li><a href="http://localhost:2368/basic-unix-commands-for-geek/#hostname">hostname</a></li>
+<li><a href="http://localhost:2368/basic-unix-commands-for-geek/#ls">ls</a></li>
+<li><a href="http://localhost:2368/basic-unix-commands-for-geek/#rm">rm</a></li>
+<li><a href="http://localhost:2368/basic-unix-commands-for-geek/#wc">wc</a></li>
+<li><a href="http://localhost:2368/basic-unix-commands-for-geek/#grep">grep</a></li>
+<li><a href="http://localhost:2368/basic-unix-commands-for-geek/#find">find</a></li>
+<li><a href="http://localhost:2368/basic-unix-commands-for-geek/#watch">watch</a></li>
+<li><a href="http://localhost:2368/basic-unix-commands-for-geek/#top">top</a></li>
+<li><a href="http://localhost:2368/basic-unix-commands-for-geek/#tree">tree</a></li>
+</ul>
+
+<h2 id="hostname">hostname</h2>
+
+<p>To get the hostname of the current system.</p>
+
+<h2 id="ls">ls</h2>
+
+<h3 id="lsltra">ls -ltra</h3>
+
+<p>Say it loud <strong><em>l s minus l t r a</em></strong></p>
+
+<p>Always use <code>ls -ltra</code> for listing directories, it will show all hidden as well as arrange files as per last modified date.</p>
+
+<h2 id="rm">rm</h2>
+
+<h3 id="rmrffiledirectory">rm -rf <file directory=""></file></h3>
+
+<p>Say it loud <strong><em>r m minus r f</em></strong></p>
+
+<p>Used to remove directory/files forcefully. </p>
+
+<p>Must be used carefully, as it deletes <em>all files and folders</em> within directory without prompt</p>
+
+<h2 id="wc">wc</h2>
+
+<h3 id="wcl">wc -l</h3>
+
+<p>Say it loud <strong><em>w c minus l</em></strong></p>
+
+<p>It will count number of lines in a file</p>
+
+<h2 id="grep">grep</h2>
+
+<h3 id="grepsearchstringfilename"><code>grep "&lt;search string&gt;" &lt;filename&gt;</code></h3>
+
+<p>Say it loud <strong><em>grep</em></strong></p>
+
+<p>Grep will search the string in the file and will print the line to standard output</p>
+
+<h2 id="find">find</h2>
+
+<h3 id="findtypef">find . -type f</h3>
+
+<p>Say it loud <strong><em>find dot minus type f</em></strong></p>
+
+<ul>
+<li><code>find</code> - command</li>
+<li><code>.</code> - current directory</li>
+<li><code>-type f</code> - Only list files alternatively use <code>type -d</code> to find only directories</li>
+</ul>
+
+<p>List all the files recursively in all folders of current directory.</p>
+
+<h2 id="watch">watch</h2>
+
+<h3 id="watchcommand"><code>watch &lt;command&gt;</code></h3>
+
+<p>Say it loud <code>watch</code> <br>
+This command will re-run the command every 2 secs (by default). </p>
+
+<p>Its good when you want to monitor or watch for files. eg. execute this command  </p>
+
+<pre><code>mkdir new_dir  
+cd new_dir  
+watch "ls -tlra"`  
+</code></pre>
+
+<p>and open another terminal window  </p>
+
+<pre><code>cd new_dir  
+touch new_file  
+</code></pre>
+
+<p>The first window will show the new file added within 2 seconds.</p>
+
+<p>For OSX, use <code>brew install watch</code> if command does not work</p>
+
+<h2 id="top">top</h2>
+
+<p>Say it loud <code>top</code> </p>
+
+<p>Its command line activity monitor/ task manager for terminal</p>
+
+<p>Suprise yourself with <code>brew install htop</code> and then use <code>htop</code> instead.</p>
+
+<h2 id="tree">tree</h2>
+
+<h3 id="treel2">tree -L 2</h3>
+
+<p>Say it loud <code>tree minus L two</code></p>
+
+<p>It will generate a tree view for directories and files with level 2</p>
+
+<p>Install via <code>brew install tree</code></p>
+
+<h1 id="advanced">Advanced</h1>
+
+<h2 id="combinefindandgrepcommand">Combine find and grep command</h2>
+
+<p>List all the files in current directory with <code>.js</code> file extension</p>
+
+<p><code>find . -type f | grep ".js$"</code></p>
+
+<h2 id="combinefindxargsandgrepcommand">Combine find, xargs and grep command</h2>
+
+<p>List all the files in current directory with 'foo' word</p>
+
+<p><code>find . -type f | xargs grep "foo"</code></p>
+
+<h2 id="combinefindxargsandgrepcommandwithexcludesomefolders">Combine find, xargs and grep command with exclude some folders</h2>
+
+<p>List all the files in current directory with 'foo' word except file path having in <code>node_modules</code> and <code>bower_components</code> folder</p>
+
+<p><code>find . -type f | egrep -v "\/node_modules\/|\/bower_components\/" | xargs grep "foo"</code></p>
+
+<h2 id="searchmultiplestringsinlistoffiles">Search multiple strings in list of files</h2>
+
+<p><code>find . -type f | xargs egrep "foo|bar"</code></p>
+
+<h2 id="searchmultiplestringinlistoffileswhereallpatternsareinafile">Search multiple string in list of files where all patterns are in a file</h2>
+
+<p>Create a file with string needs to be searched for:  </p>
+
+<pre><code>$ cat lookup-patterns-file
+Output:  
+foo  
+bar  
+matching-pattern  
+</code></pre>
+
+<p>Search for all strings matching in file <code>lookup-patterns-file</code> against folders</p>
+
+<p><code>find . -type f | xargs grep -f patterns-file</code></p>]]></content:encoded></item><item><title><![CDATA[Comparing Package manager]]></title><description><![CDATA[Comparing the package manager for Node, Ruby and PHP, includes, default public repository, dependency command, dependency lock, etc.]]></description><link>http://localhost:2368/comparing-npm-with-ruby/</link><guid isPermaLink="false">7f18dec7-3d98-43e1-8bd7-cca04915db7b</guid><category><![CDATA[npm]]></category><category><![CDATA[bundler]]></category><category><![CDATA[composer]]></category><dc:creator><![CDATA[Chintan Patel]]></dc:creator><pubDate>Tue, 02 Feb 2016 04:38:34 GMT</pubDate><content:encoded><![CDATA[<p>Following is the comparison in the different language:  </p>
+
+<table>  
+<thead>  
+    <th></th>
+    <th>Node</th>
+    <th>Ruby</th>
+    <th>PHP</th>
+</thead>  
+<tbody>  
+<tr>  
+    <td>Package Manager</td>
+    <td>NPM</td>
+    <td>Bundle</td>
+    <td>Composer</td>
+</tr>  
+<tr>  
+    <td>Install dependencies</td>
+    <td>npm install</td>
+    <td>bundle install</td>
+    <td>composer.phar</td>
+</tr>  
+<tr>  
+    <td>Dependency file</td>
+    <td>package.json</td>
+    <td>Gemfile</td>
+    <td>composer.json</td>
+</tr>  
+<tr>  
+    <td>Locking Dependencies</td>
+    <td>npm-shrinkwrap</td>
+    <td>Gemfile.lock</td>
+    <td>composer.lock</td>
+</tr>  
+<tr>  
+    <td>Public Repository</td>
+    <td><a href="https://www.npmjs.com">https://www.npmjs.com</a></td>
+    <td><a href="https://rubygems.org/">https://rubygems.org/</a></td>
+    <td><a href="https://packagist.org/">https://packagist.org/</a></td>
+</tr>  
+</tbody>  
+</table>]]></content:encoded></item><item><title><![CDATA[About Me]]></title><description><![CDATA[<p>I am a Full-Stack Developer and geek who is well experienced with Mongo-Express-Angular-Node (MEAN) and Unix/Linux-Apache-MySQL-PHP (LAMP) stack. </p>
+
+<h2 id="breakingtheice">Breaking the Ice</h2>
+
+<ul>
+<li><p>I am Passionate about Object-Oriented Programming <code>(OOP)</code> for front-end JS framework like <code>AngularJS</code> and back-end scripts like <code>(PHP/JavaScript)</code>. Undoubtedly worked on <code>HTML/CSS</code>, also, knows all <code>IE</code></p></li></ul>]]></description><link>http://localhost:2368/chintan-patel-resume/</link><guid isPermaLink="false">2289b587-e35f-410b-8209-f7c429e2ad8f</guid><category><![CDATA[Resume]]></category><dc:creator><![CDATA[Chintan Patel]]></dc:creator><pubDate>Mon, 21 Dec 2015 17:23:00 GMT</pubDate><content:encoded><![CDATA[<p>I am a Full-Stack Developer and geek who is well experienced with Mongo-Express-Angular-Node (MEAN) and Unix/Linux-Apache-MySQL-PHP (LAMP) stack. </p>
+
+<h2 id="breakingtheice">Breaking the Ice</h2>
+
+<ul>
+<li><p>I am Passionate about Object-Oriented Programming <code>(OOP)</code> for front-end JS framework like <code>AngularJS</code> and back-end scripts like <code>(PHP/JavaScript)</code>. Undoubtedly worked on <code>HTML/CSS</code>, also, knows all <code>IE Quirks</code>. I am aware of CSS preprocessors like <code>SASS</code>, <code>LESS</code>, etc., used with <code>Bootstrap 2/3</code>, <code>foundation</code> or <code>material design</code>. In the past, I have used third-party bower components using <code>bower</code> package manager.</p></li>
+<li><p>I am convinced that, using <code>NodeJS</code>, I can do anything from integrating <code>Raspberry PI</code> or <code>Arduino</code> to make a highly scalable clusters of the server network. The HTTP middleware <code>Express</code> and <code>Restify</code>, makes it possible to interact with the additional functionality to Node's performance.</p></li>
+<li><p>I have contributed to Design and development of <code>RESTful API's</code>, these APIs handled user security using JWT token strategy.</p></li>
+<li><p>Full understanding of database architecture with NoSQL and RDMS databases like <code>MongoDB</code> and <code>MySQL</code>.</p></li>
+<li><p>I am very glad to work on <code>Amazon Web Service</code> (AWS), with different products listed below:</p>
+
+<ul><li>To execute my application used <code>Elastic Cloud Compute (EC2)</code></li>
+<li>To store my images, videos and files used <code>Simple Storage Service (S3)</code></li>
+<li>To send email with guarantee delivery to the User's mailbox using <code>Simple Email Service (SES)</code></li>
+<li>To schedule automatic tasks for encoding videos, audio and other document files to different formats <code>Simple Workflow service (SWF)</code></li>
+<li>MySQL database was hosted in <code>Redundant Database Service (RDS)</code></li>
+<li>To add content to CDN used <code>Amazon CloudFront</code></li>
+<li>Used <code>Amazon CloudSearch</code> to add search functionality on website</li></ul></li>
+</ul>
+
+<h2 id="methodology">Methodology</h2>
+
+<ul>
+<li>Our team follows <code>Agile</code> and <code>SCRUM</code> development process</li>
+<li>Bi-weekly Iterations using Version One, JIRA, etc.</li>
+<li>Initially, used Waterfall model</li>
+</ul>
+
+<h2 id="workexperience">Work Experience</h2>
+
+<h5 id="srassociate">Sr. Associate</h5>
+
+<p>at <em>Cognizant Technology Solutions</em> worked from May '15</p>
+
+<p>The Digital Works space at Cognizant Technology Solutions provides services to Entertainment and Media companies to explore and start movement towards the new emerging technology like Cloud service, Mobile Apps and Analytics.</p>
+
+<p>Since May '15, I am working as Software Architect at <strong>Walt Disney Parks and Resorts, Orlando, FL</strong>, to help develop Reference Architecture implementation of Single Page Application (SPA) and RESTful API server. Also, make some prescriptions and documents, for delivery teams to follow the standards and enhance with greater efficiency and resources. Below are the tasks listed of my day-to-day activities:</p>
+
+<ul>
+<li>Worked on Internationalization<code>(i18n)</code> and Localization<code>(l10n)</code> techniques</li>
+<li>Reusable code blocks using <code>yeoman</code> generators</li>
+<li>Identify / Debug / Resolved Coding errors in NodeJS and AngularJS for delivery teams</li>
+<li>Provide proper knowledge stream to other developers by internal company Web Cast</li>
+<li>Improve Code Quality and Code Coverage if required for certain critical projects</li>
+<li>Adding new features to existing applications or generators</li>
+<li>Helping teams with writing Unit Test cases for Angular and NodeJS in <code>karma</code>, <code>mocha</code> and <code>chai</code></li>
+<li>Use <code>Docker</code> container to deploy the applications locally. These application later gets deployed at AWS Cloud or Disney's enterprise data center.</li>
+</ul>
+
+<h4 id="softwareengineer">Software Engineer</h4>
+
+<p>at <em><a href="https://www.tenlegs.com">Tenlegs, LLC</a></em> worked from Feb '11 - May '15</p>
+
+<p>Tenlegs provides an innovative platform that brings together members of a school community onto one trusted network. We do this with a privately-branded online network that enables individuals to connect and collaborate, regardless of geography or discipline empowering schools to extend their presence globally.</p>
+
+<p>I have worked at Tenlegs.com (my third startup experience), for more than 4 years  as full-stack software developer. The technology includes - Linux, Apache web server, MySQL database and PHP language Stack, AngularJS, jQuery and Amazon AWS.</p>
+
+<ul>
+<li>Introduced Angular / Node in new projects which improved the quality of product</li>
+<li>Integrated vendor-based payment gateway using Paypal and Stripe APIs</li>
+<li>Contributed to project for white labelling the client's website experience</li>
+<li>Converted the whole site to CDN using Amazon Cloudfront and Amazon S3 services improved the image rendering to 20%.</li>
+<li>Worked on CloudFront for Streaming the Video rather than progressive download, saving 30% of cost.</li>
+<li>Improved the Video/Audio encoding time to 50% by moving the services to Amazon SWF from batch processes</li>
+<li>Helped in the development of Deployment workflow for the releases reducing the downtime of the portal</li>
+<li>Followed Agile process of development and co-ordinated with offshore team</li>
+<li>Added new features to in-house PHP framework</li>
+<li>Worked with UX team to create a pixel perfect HTML views</li>
+<li>Migrated the source code repository from <code>svn</code> with <code>git</code></li>
+<li>Migrated the UI from Bootstrap v2 to Bootstrap v3</li>
+</ul>]]></content:encoded></item></channel></rss>
