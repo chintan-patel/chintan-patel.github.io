@@ -11,7 +11,7 @@
 
     <link rel="shortcut icon" href="../favicon.ico">
 
-    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=9d6500553e">
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=54a383f1eb">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
 
     <link rel="canonical" href="http://www.kashcandi.com/using-vi-editor/">
@@ -23,7 +23,7 @@
     <meta property="og:description" content="Guide Audience Not using Unix or Macbook Terminal because you are scared of vi or vim, this is the guide for you...! Do not worry, this steps will make you familiar with commands. Basic understanding of vi There are three...">
     <meta property="og:url" content="http://www.kashcandi.com/using-vi-editor/">
     <meta property="article:published_time" content="2016-02-16T22:11:25.675Z">
-    <meta property="article:modified_time" content="2016-02-16T22:28:54.734Z">
+    <meta property="article:modified_time" content="2016-02-16T22:58:06.689Z">
     
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Using Vi Editor">
@@ -46,7 +46,7 @@
     "headline": "Using Vi Editor",
     "url": "http://www.kashcandi.com/using-vi-editor/",
     "datePublished": "2016-02-16T22:11:25.675Z",
-    "dateModified": "2016-02-16T22:28:54.734Z",
+    "dateModified": "2016-02-16T22:58:06.689Z",
     "description": "Guide Audience Not using Unix or Macbook Terminal because you are scared of vi or vim, this is the guide for you...! Do not worry, this steps will make you familiar with commands. Basic understanding of vi There are three..."
 }
     </script>
@@ -270,16 +270,6 @@ h1 {
 
 <p>Behavior: The line will disappear and saved in clipboard.</p>
 
-<p><strong>Action: Paste</strong></p>
-
-<ul>
-<li>Perform <strong>Cut</strong> action</li>
-<li>Navigate to a line</li>
-<li>Press <code>p</code>for paste</li>
-</ul>
-
-<p>Behavior: The line will appear in next line to the cursor.</p>
-
 <p><strong>Action: Copy</strong></p>
 
 <ul>
@@ -289,7 +279,59 @@ h1 {
 
 <p>Behavior: The line will disappear and saved in clipboard.</p>
 
+<p><strong>Action: Paste</strong></p>
+
+<ul>
+<li>Perform <strong>Cut/Copy</strong> action</li>
+<li>Navigate to a line</li>
+<li>Press <code>p</code>for paste</li>
+</ul>
+
+<p>Behavior: The line will appear in next line to the cursor.</p>
+
 <h2 id="inputinsertmode">Input / Insert Mode</h2>
+
+<p><strong>Action: Edit the document</strong></p>
+
+<ul>
+<li>Always Press <code>ESC</code>, to clear modes and back to <code>vi mode</code></li>
+<li>Press <code>i</code> or <code>a</code> or <code>o</code> to start the insert mode</li>
+</ul>
+
+<p>Behavior: This will behave like normal editor, use keyboard arrows to navigate between lines.</p>
+
+<h2 id="commandmode">Command Mode</h2>
+
+<p>To Start this mode Press <code>:&lt;command&gt;</code>, following table shows the details of usages:</p>
+
+<table>  
+<th>Command</th>  
+<th>Action</th>  
+<tr>  
+  <td>:q</td>
+  <td>to close the file</td>
+</tr>  
+<tr>  
+  <td>:w</td>
+  <td>to save the file</td>
+</tr>  
+<tr>  
+  <td>:wq</td>
+  <td>to save and close the file</td>
+</tr>  
+<tr>  
+  <td>:w newfile.txt</td>
+  <td>to save as `newfile.txt`</td>
+</tr>  
+<tr>  
+  <td>:q!</td>
+  <td>to close file without saving changes</td>
+</tr>  
+<tr>  
+  <td>:wq!</td>
+  <td>to save and close file</td>
+</tr>  
+</table>
         </section>
 
         <footer class="post-footer">
@@ -362,7 +404,7 @@ h1 {
   ga('send', 'pageview');
 </script>
 
-    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=9d6500553e"></script>
-    <script type="text/javascript" src="../assets/js/index.js?v=9d6500553e"></script>
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=54a383f1eb"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=54a383f1eb"></script>
 
 </body>
