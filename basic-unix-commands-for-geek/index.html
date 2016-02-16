@@ -1,0 +1,490 @@
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Basic Unix Commands for Geek</title>
+    <meta name="description" content="Blog is about basic unix commands which every developer must know. These commands will make you feel better and more professional.">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=6a8c051b39">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
+
+    <link rel="canonical" href="index.html">
+    <meta name="referrer" content="origin">
+    
+    <meta property="og:site_name" content="Passion">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Basic Unix Commands for Geek">
+    <meta property="og:description" content="Blog is about basic unix commands which every developer must know. These commands will make you feel better and more professional.">
+    <meta property="og:url" content="http://localhost:2368/basic-unix-commands-for-geek/">
+    <meta property="article:published_time" content="2016-02-04T03:56:41.911Z">
+    <meta property="article:modified_time" content="2016-02-16T01:56:48.968Z">
+    <meta property="article:tag" content="unix">
+    <meta property="article:tag" content="commands">
+    <meta property="article:tag" content="vi editor">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Basic Unix Commands for Geek">
+    <meta name="twitter:description" content="Blog is about basic unix commands which every developer must know. These commands will make you feel better and more professional.">
+    <meta name="twitter:url" content="http://localhost:2368/basic-unix-commands-for-geek/">
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "Passion",
+    "author": {
+        "@type": "Person",
+        "name": "Chintan Patel",
+        "image": "//www.gravatar.com/avatar/879b5f8b4f08f869d10804a35b63e87c?s=250&d=mm&r=x",
+        "url": "http://localhost:2368/author/chintan-patel",
+        "sameAs": "https://github.com/chintan-patel",
+        "description": null
+    },
+    "headline": "Basic Unix Commands for Geek",
+    "url": "http://localhost:2368/basic-unix-commands-for-geek/",
+    "datePublished": "2016-02-04T03:56:41.911Z",
+    "dateModified": "2016-02-16T01:56:48.968Z",
+    "keywords": "unix, commands, vi editor",
+    "description": "Blog is about basic unix commands which every developer must know. These commands will make you feel better and more professional."
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.7">
+    <link rel="alternate" type="application/rss+xml" title="Passion" href="../rss/index.html">
+    <style>
+h1 {
+  position: relative;  
+}
+.circle1 {
+  position: relative;
+  top: 0px;
+  width: 0px;
+  height: 0px;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #1ba7f2;
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  -moz-transform:rotate(320deg);
+  -webkit-transform:rotate(320deg);
+  -o-transform:rotate(320deg);
+  -ms-transform:rotate(320deg);
+  animation: spin1 1s infinite linear;
+  -webkit-animation: spin1 1s infinite linear;
+  
+}
+.circle2 {
+  position: absolute;
+  top: 0px;
+  width: 0px;
+  height: 0px;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #1ba7f2;
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  -moz-transform:rotate(80deg);
+  -webkit-transform:rotate(80deg);
+  -o-transform:rotate(80deg);
+  -ms-transform:rotate(80deg);
+  animation: spin2 1s infinite linear;
+  -webkit-animation: spin2 1s infinite linear;
+}
+.circle3 {
+  position: absolute;
+  top: 0px;
+  width: 0px;
+  height: 0px;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #1ba7f2;
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  -moz-transform:rotate(200deg);
+  -webkit-transform:rotate(200deg);
+  -o-transform:rotate(200deg);
+  -ms-transform:rotate(200deg);
+  animation: spin3 1s infinite linear;
+  -webkit-animation: spin3 1s infinite linear;
+}
+/* animations */
+
+@keyframes spin1 {
+  0% {
+  -moz-transform:rotate(320deg);
+  -webkit-transform:rotate(320deg);
+  -o-transform:rotate(320deg);
+  -ms-transform:rotate(320deg);
+  }
+  100% {
+  -moz-transform:rotate(680deg);
+  -webkit-transform:rotate(680deg);
+  -o-transform:rotate(680deg);
+  -ms-transform:rotate(680deg); 
+  }
+}
+@-webkit-keyframes spin1 {
+  0% {
+  -moz-transform:rotate(320deg);
+  -webkit-transform:rotate(320deg);
+  -o-transform:rotate(320deg);
+  -ms-transform:rotate(320deg);
+  }
+  100% {
+  -moz-transform:rotate(680deg);
+  -webkit-transform:rotate(680deg);
+  -o-transform:rotate(680deg);
+  -ms-transform:rotate(680deg); 
+  }
+}
+@keyframes spin2 {
+  0% {
+  -moz-transform:rotate(80deg);
+  -webkit-transform:rotate(80deg);
+  -o-transform:rotate(80deg);
+  -ms-transform:rotate(80deg);
+  }
+  100% {
+  -moz-transform:rotate(440deg);
+  -webkit-transform:rotate(440deg);
+  -o-transform:rotate(440deg);
+  -ms-transform:rotate(440deg); 
+  }
+}
+@-webkit-keyframes spin2 {
+  0% {
+  -moz-transform:rotate(80deg);
+  -webkit-transform:rotate(80deg);
+  -o-transform:rotate(80deg);
+  -ms-transform:rotate(80deg);
+  }
+  100% {
+  -moz-transform:rotate(440deg);
+  -webkit-transform:rotate(440deg);
+  -o-transform:rotate(440deg);
+  -ms-transform:rotate(440deg); 
+  }
+}
+@keyframes spin3 {
+  0% {
+  -moz-transform:rotate(200deg);
+  -webkit-transform:rotate(200deg);
+  -o-transform:rotate(200deg);
+  -ms-transform:rotate(200deg);
+  }
+  100% {
+  -moz-transform:rotate(560deg);
+  -webkit-transform:rotate(560deg);
+  -o-transform:rotate(560deg);
+  -ms-transform:rotate(560deg); 
+  }
+}
+@-webkit-keyframes spin3 {
+  0% {
+  -moz-transform:rotate(200deg);
+  -webkit-transform:rotate(200deg);
+  -o-transform:rotate(200deg);
+  -ms-transform:rotate(200deg);
+  }
+  100% {
+  -moz-transform:rotate(560deg);
+  -webkit-transform:rotate(560deg);
+  -o-transform:rotate(560deg);
+  -ms-transform:rotate(560deg); 
+  }
+}
+</style>
+</head>
+<body class="post-template tag-unix tag-commands tag-vi-editor nav-closed">
+
+    <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="index.html#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+            <li class="nav-home" role="presentation"><a href="../">Home</a></li>
+            <li class="nav-comparing-package-managers" role="presentation"><a href="../comparing-npm-with-ruby/">Comparing Package Managers</a></li>
+            <li class="nav-about-me" role="presentation"><a href="../chintan-patel-resume/">About Me</a></li>
+    </ul>
+    <a class="subscribe-button icon-feed" href="../rss/index.rss">Subscribe</a>
+</div>
+<span class="nav-cover"></span>
+
+
+    <div class="site-wrapper">
+
+        
+
+
+<header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        
+            <a class="menu-button icon-menu" href="index.html#"><span class="word">Menu</span></a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+    <article class="post tag-unix tag-commands tag-vi-editor">
+
+        <header class="post-header">
+            <h1 class="post-title">Basic Unix Commands for Geek</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2016-02-03">03 February 2016</time>  on <a href="../tag/unix/">unix</a>, <a href="../tag/commands/">commands</a>, <a href="../tag/vi-editor/">vi editor</a>
+            </section>
+        </header>
+
+        <section class="post-content">
+            <h1 id="introduction">Introduction</h1>
+
+<p>This document requires intermediate level of shell commands knowledge. For starters visit <a href="http://mally.stanford.edu/~sr/computing/basic-unix.html">http://mally.stanford.edu/~sr/computing/basic-unix.html</a></p>
+
+<h1 id="benefitsoflearning">Benefits of learning</h1>
+
+<ul>
+<li>Look professional</li>
+<li>Quicker results</li>
+<li>No need of mouse and clicks</li>
+<li>Makes you feel good</li>
+</ul>
+
+<p>Lets get started quickly...</p>
+
+<ol>
+<li><a href="index.html#basics">Basics</a>  </li>
+<li><a href="index.html#advanced">Advanced</a></li>
+</ol>
+
+<h1 id="basics">Basics</h1>
+
+<h3 id="commands">Commands</h3>
+
+<ul>
+<li><a href="index.html#hostname">hostname</a></li>
+<li><a href="index.html#ls">ls</a></li>
+<li><a href="index.html#rm">rm</a></li>
+<li><a href="index.html#wc">wc</a></li>
+<li><a href="index.html#grep">grep</a></li>
+<li><a href="index.html#find">find</a></li>
+<li><a href="index.html#watch">watch</a></li>
+<li><a href="index.html#top">top</a></li>
+<li><a href="index.html#tree">tree</a></li>
+</ul>
+
+<h2 id="hostname">hostname</h2>
+
+<p>To get the hostname of the current system.</p>
+
+<h2 id="ls">ls</h2>
+
+<h3 id="lsltra">ls -ltra</h3>
+
+<p>Say it loud <strong><em>l s minus l t r a</em></strong></p>
+
+<p>Always use <code>ls -ltra</code> for listing directories, it will show all hidden as well as arrange files as per last modified date.</p>
+
+<h2 id="rm">rm</h2>
+
+<h3 id="rmrffiledirectory">rm -rf <file></file></h3>
+
+<p>Say it loud <strong><em>r m minus r f</em></strong></p>
+
+<p>Used to remove directory/files forcefully. </p>
+
+<p>Must be used carefully, as it deletes <em>all files and folders</em> within directory without prompt</p>
+
+<h2 id="wc">wc</h2>
+
+<h3 id="wcl">wc -l</h3>
+
+<p>Say it loud <strong><em>w c minus l</em></strong></p>
+
+<p>It will count number of lines in a file</p>
+
+<h2 id="grep">grep</h2>
+
+<h3 id="grepsearchstringfilename"><code>grep "&lt;search string&gt;" &lt;filename&gt;</code></h3>
+
+<p>Say it loud <strong><em>grep</em></strong></p>
+
+<p>Grep will search the string in the file and will print the line to standard output</p>
+
+<h2 id="find">find</h2>
+
+<h3 id="findtypef">find . -type f</h3>
+
+<p>Say it loud <strong><em>find dot minus type f</em></strong></p>
+
+<ul>
+<li><code>find</code> - command</li>
+<li><code>.</code> - current directory</li>
+<li><code>-type f</code> - Only list files alternatively use <code>type -d</code> to find only directories</li>
+</ul>
+
+<p>List all the files recursively in all folders of current directory.</p>
+
+<h2 id="watch">watch</h2>
+
+<h3 id="watchcommand"><code>watch &lt;command&gt;</code></h3>
+
+<p>Say it loud <code>watch</code> <br>
+This command will re-run the command every 2 secs (by default). </p>
+
+<p>Its good when you want to monitor or watch for files. eg. execute this command  </p>
+
+<pre><code>mkdir new_dir  
+cd new_dir  
+watch "ls -tlra"`  
+</code></pre>
+
+<p>and open another terminal window  </p>
+
+<pre><code>cd new_dir  
+touch new_file  
+</code></pre>
+
+<p>The first window will show the new file added within 2 seconds.</p>
+
+<p>For OSX, use <code>brew install watch</code> if command does not work</p>
+
+<h2 id="top">top</h2>
+
+<p>Say it loud <code>top</code> </p>
+
+<p>Its command line activity monitor/ task manager for terminal</p>
+
+<p>Suprise yourself with <code>brew install htop</code> and then use <code>htop</code> instead.</p>
+
+<h2 id="tree">tree</h2>
+
+<h3 id="treel2">tree -L 2</h3>
+
+<p>Say it loud <code>tree minus L two</code></p>
+
+<p>It will generate a tree view for directories and files with level 2</p>
+
+<p>Install via <code>brew install tree</code></p>
+
+<h1 id="advanced">Advanced</h1>
+
+<h2 id="combinefindandgrepcommand">Combine find and grep command</h2>
+
+<p>List all the files in current directory with <code>.js</code> file extension</p>
+
+<p><code>find . -type f | grep ".js$"</code></p>
+
+<h2 id="combinefindxargsandgrepcommand">Combine find, xargs and grep command</h2>
+
+<p>List all the files in current directory with 'foo' word</p>
+
+<p><code>find . -type f | xargs grep "foo"</code></p>
+
+<h2 id="combinefindxargsandgrepcommandwithexcludesomefolders">Combine find, xargs and grep command with exclude some folders</h2>
+
+<p>List all the files in current directory with 'foo' word except file path having in <code>node_modules</code> and <code>bower_components</code> folder</p>
+
+<p><code>find . -type f | egrep -v "\/node_modules\/|\/bower_components\/" | xargs grep "foo"</code></p>
+
+<h2 id="searchmultiplestringsinlistoffiles">Search multiple strings in list of files</h2>
+
+<p><code>find . -type f | xargs egrep "foo|bar"</code></p>
+
+<h2 id="searchmultiplestringinlistoffileswhereallpatternsareinafile">Search multiple string in list of files where all patterns are in a file</h2>
+
+<p>Create a file with string needs to be searched for:  </p>
+
+<pre><code>$ cat lookup-patterns-file
+Output:  
+foo  
+bar  
+matching-pattern  
+</code></pre>
+
+<p>Search for all strings matching in file <code>lookup-patterns-file</code> against folders</p>
+
+<p><code>find . -type f | xargs grep -f patterns-file</code></p>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="../author/chintan-patel/" style="background-image: url(http://www.gravatar.com/avatar/879b5f8b4f08f869d10804a35b63e87c?s=250&amp;d=mm&amp;r=x)"><span class="hidden">Chintan Patel's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="../author/chintan-patel/">Chintan Patel</a></h4>
+
+                    <p>Read <a href="../author/chintan-patel/">more posts</a> by this author.</p>
+                <div class="author-meta">
+                    <span class="author-location icon-location">Orlando, FL</span>
+                    <span class="author-link icon-link"><a href="https://github.com/chintan-patel">https://github.com/chintan-patel</a></span>
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=Basic%20Unix%20Commands%20for%20Geek&amp;url=http://localhost:2368/basic-unix-commands-for-geek/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/basic-unix-commands-for-geek/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://localhost:2368/basic-unix-commands-for-geek/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+
+    </article>
+</main>
+
+<aside class="read-next">
+    <a class="read-next-story prev no-cover" href="../comparing-npm-with-ruby/">
+        <section class="post">
+            <h2>Comparing Package manager</h2>
+            <p>Following is the comparison in the different language:                  Node     Ruby     PHP              Package Manager     NPM     Bundle     Composer           Install dependencies     npm…</p>
+        </section>
+    </a>
+</aside>
+
+
+
+        <footer class="site-footer clearfix">
+            <section class="copyright"><a href="../">Passion</a> © 2016</section>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Ad Blog -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8284264193118335" data-ad-slot="3443310401" data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-18091262-2', 'auto');
+  ga('send', 'pageview');
+</script>
+
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=6a8c051b39"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=6a8c051b39"></script>
+
+</body>
