@@ -3,8 +3,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>compare package manager</title>
-    <meta name="description" content="Comparing the package manager for Node, Ruby and PHP, includes, default public repository, dependency command, dependency lock, etc.">
+    <title>Using Vi editor</title>
+    <meta name="description" content="">
 
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,19 +19,16 @@
     
     <meta property="og:site_name" content="Passion">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="compare package manager">
-    <meta property="og:description" content="Comparing the package manager for Node, Ruby and PHP, includes, default public repository, dependency command, dependency lock, etc.">
-    <meta property="og:url" content="http://localhost:2368/2016/02/01/comparing-npm-with-ruby/">
-    <meta property="article:published_time" content="2016-02-02T04:38:34.681Z">
-    <meta property="article:modified_time" content="2016-02-16T04:16:19.550Z">
-    <meta property="article:tag" content="npm">
-    <meta property="article:tag" content="bundler">
-    <meta property="article:tag" content="composer">
+    <meta property="og:title" content="Using Vi editor">
+    <meta property="og:description" content="Guide Audience Not using Unix or Macbook Terminal because you are scared of vi or vim, this is the guide for you...! Do not worry, this steps will make you familiar with commands. Before we get started, download this sample...">
+    <meta property="og:url" content="http://localhost:2368/2016/03/27/using-vi-editor/">
+    <meta property="article:published_time" content="2016-03-28T03:41:30.685Z">
+    <meta property="article:modified_time" content="2016-03-28T03:41:30.682Z">
     
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="compare package manager">
-    <meta name="twitter:description" content="Comparing the package manager for Node, Ruby and PHP, includes, default public repository, dependency command, dependency lock, etc.">
-    <meta name="twitter:url" content="http://localhost:2368/2016/02/01/comparing-npm-with-ruby/">
+    <meta name="twitter:title" content="Using Vi editor">
+    <meta name="twitter:description" content="Guide Audience Not using Unix or Macbook Terminal because you are scared of vi or vim, this is the guide for you...! Do not worry, this steps will make you familiar with commands. Before we get started, download this sample...">
+    <meta name="twitter:url" content="http://localhost:2368/2016/03/27/using-vi-editor/">
     
     <script type="application/ld+json">
 {
@@ -46,12 +43,11 @@
         "sameAs": "https://github.com/chintan-patel",
         "description": null
     },
-    "headline": "compare package manager",
-    "url": "http://localhost:2368/2016/02/01/comparing-npm-with-ruby/",
-    "datePublished": "2016-02-02T04:38:34.681Z",
-    "dateModified": "2016-02-16T04:16:19.550Z",
-    "keywords": "npm, bundler, composer",
-    "description": "Comparing the package manager for Node, Ruby and PHP, includes, default public repository, dependency command, dependency lock, etc."
+    "headline": "Using Vi editor",
+    "url": "http://localhost:2368/2016/03/27/using-vi-editor/",
+    "datePublished": "2016-03-28T03:41:30.685Z",
+    "dateModified": "2016-03-28T03:41:30.682Z",
+    "description": "Guide Audience Not using Unix or Macbook Terminal because you are scared of vi or vim, this is the guide for you...! Do not worry, this steps will make you familiar with commands. Before we get started, download this sample..."
 }
     </script>
 
@@ -204,7 +200,7 @@ h1 {
 }
 </style>
 </head>
-<body class="post-template tag-npm tag-bundler tag-composer nav-closed">
+<body class="post-template nav-closed">
 
     <div class="nav">
     <h3 class="nav-title">Menu</h3>
@@ -234,57 +230,240 @@ h1 {
 </header>
 
 <main class="content" role="main">
-    <article class="post tag-npm tag-bundler tag-composer featured">
+    <article class="post">
 
         <header class="post-header">
-            <h1 class="post-title">Comparing Package manager</h1>
+            <h1 class="post-title">Using Vi editor</h1>
             <section class="post-meta">
-                <time class="post-date" datetime="2016-02-01">01 February 2016</time>  on <a href="../../../../tag/npm/">npm</a>, <a href="../../../../tag/bundler/">bundler</a>, <a href="../../../../tag/composer/">composer</a>
+                <time class="post-date" datetime="2016-03-27">27 March 2016</time> 
             </section>
         </header>
 
         <section class="post-content">
-            <p>Following is the comparison in the different language:  </p>
+            <h3 id="guideaudience">Guide Audience</h3>
 
-<table>  
-<thead>  
-    <th></th>
-    <th>Node</th>
-    <th>Ruby</th>
-    <th>PHP</th>
-</thead>  
-<tbody>  
-<tr>  
-    <td>Package Manager</td>
-    <td>NPM</td>
-    <td>Bundle</td>
-    <td>Composer</td>
-</tr>  
-<tr>  
-    <td>Install dependencies</td>
-    <td>npm install</td>
-    <td>bundle install</td>
-    <td>composer.phar</td>
-</tr>  
-<tr>  
-    <td>Dependency file</td>
-    <td>package.json</td>
-    <td>Gemfile</td>
-    <td>composer.json</td>
-</tr>  
-<tr>  
-    <td>Locking Dependencies</td>
-    <td>npm-shrinkwrap</td>
-    <td>Gemfile.lock</td>
-    <td>composer.lock</td>
-</tr>  
-<tr>  
-    <td>Public Repository</td>
-    <td><a href="https://www.npmjs.com">https://www.npmjs.com</a></td>
-    <td><a href="https://rubygems.org/">https://rubygems.org/</a></td>
-    <td><a href="https://packagist.org/">https://packagist.org/</a></td>
-</tr>  
-</tbody>  
+<p>Not using Unix or Macbook Terminal because you are scared of <code>vi</code> or <code>vim</code>, this is the guide for you...!</p>
+
+<p>Do not worry, this steps will make you familiar with commands.</p>
+
+<p>Before we get started, download this sample file, to test this commands.</p>
+
+<h3 id="modesinvi">Modes in vi</h3>
+
+<p>There are three <code>vi</code> modes:</p>
+
+<ul>
+<li><a href="http://localhost:2368/2016/03/27/using-vi-editor/index.html#vimode"><strong>vi mode</strong></a> - This is to use cut, copy and paste commands.
+<ul><li>Press <code>ESC</code> to return to <code>vi</code> mode.</li></ul></li>
+<li><a href="http://localhost:2368/2016/03/27/using-vi-editor/index.html#inputinsertmode"><strong>input/insert mode</strong></a>
+<ul><li>Press <code>i</code> to start insert mode</li></ul></li>
+<li><a href="http://localhost:2368/2016/03/27/using-vi-editor/index.html#commandmode"><strong>command mode</strong></a> - This is used editor settings like line numbers, file operations, etc.
+<ul><li>Press <code>:</code> to start command mode</li></ul></li>
+</ul>
+
+<h4 id="vimode">vi mode</h4>
+
+<p>Make sure that all the commands are performed in <code>ESC</code> mode.</p>
+
+<p><strong>Action: Cut</strong></p>
+
+<ul>
+<li>Navigate to a line</li>
+<li>Press <code>dd</code></li>
+</ul>
+
+<p>Behavior: The line will disappear and saved in clipboard.</p>
+
+<p><strong>Action: Undo changes</strong></p>
+
+<ul>
+<li>Press <code>u</code></li>
+</ul>
+
+<p><strong>Action: Redo changes</strong></p>
+
+<ul>
+<li>Press <code>CTRL+r</code></li>
+</ul>
+
+<p><strong>Action: Copy</strong></p>
+
+<ul>
+<li>Navigate to a line</li>
+<li>Press <code>yy</code></li>
+</ul>
+
+<p>Behavior: The line will disappear and saved in clipboard.</p>
+
+<p><strong>Action: Paste</strong></p>
+
+<ul>
+<li>Perform <strong>Cut/Copy</strong> action</li>
+<li>Navigate to a line</li>
+<li>Press <code>p</code>for paste</li>
+</ul>
+
+<p>Behavior: The line will appear in next line to the cursor.</p>
+
+<h4 id="somemorevimodecommands">some more vi mode commands...</h4>
+
+<table>
+
+<tbody>
+
+<tr>
+
+<th>Command</th>
+
+<th>Action</th>
+
+</tr>
+
+<tr>
+
+<td>Press $</td>
+
+<td>To End Of Line (EOL)</td>
+
+</tr>
+
+<tr>
+
+<td>Press 0</td>
+
+<td>To Start Of Line</td>
+
+</tr>
+
+<tr>
+
+<td>Press :1</td>
+
+<td>To jump to First line of File</td>
+
+</tr>
+
+<tr>
+
+<td>Press :12</td>
+
+<td>To jump to line #12 of the file</td>
+
+</tr>
+
+<tr>
+
+<td>Press SHIFT+G</td>
+
+<td>To jump to Last line of File</td>
+
+</tr>
+
+<tr>
+
+<td>Press dd</td>
+
+<td>To cut the line pointed by cursor</td>
+
+</tr>
+
+<tr>
+
+<td>Type /search term and ENTER</td>
+
+<td>to search the word in file</td>
+
+</tr>
+
+<tr>
+
+<td>Press w</td>
+
+<td>To jump the words in the line</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<h4 id="inputinsertmode">Input / Insert Mode</h4>
+
+<p><strong>Action: Edit the document</strong></p>
+
+<ul>
+<li>Always Press <code>ESC</code>, to clear modes and back to <code>vi mode</code></li>
+<li>Press <code>i</code> or <code>a</code> or <code>o</code> to start the insert mode</li>
+</ul>
+
+<p>Behavior: This will behave like normal editor, use keyboard arrows to navigate between lines.</p>
+
+<h4 id="commandmode">Command Mode</h4>
+
+<p>To Start this mode Press <code>:&lt;command&gt;</code>, following table shows the details of usages:</p>
+
+<table>
+
+<tbody>
+
+<tr>
+
+<th>Command</th>
+
+<th>Action</th>
+
+</tr>
+
+<tr>
+
+<td>:q</td>
+
+<td>to close the file</td>
+
+</tr>
+
+<tr>
+
+<td>:w</td>
+
+<td>to save the file</td>
+
+</tr>
+
+<tr>
+
+<td>:wq</td>
+
+<td>to save and close the file</td>
+
+</tr>
+
+<tr>
+
+<td>:w newfile.txt</td>
+
+<td>to save as `newfile.txt`</td>
+
+</tr>
+
+<tr>
+
+<td>:q!</td>
+
+<td>to close file without saving changes</td>
+
+</tr>
+
+<tr>
+
+<td>:wq!</td>
+
+<td>to save and close file</td>
+
+</tr>
+
+</tbody>
+
 </table>
         </section>
 
@@ -308,13 +487,13 @@ h1 {
 
             <section class="share">
                 <h4>Share this post</h4>
-                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=Comparing%20Package%20manager&amp;url=http://localhost:2368/2016/02/01/comparing-npm-with-ruby/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=Using%20Vi%20editor&amp;url=http://localhost:2368/2016/03/27/using-vi-editor/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                     <span class="hidden">Twitter</span>
                 </a>
-                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/2016/02/01/comparing-npm-with-ruby/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/2016/03/27/using-vi-editor/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                     <span class="hidden">Facebook</span>
                 </a>
-                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://localhost:2368/2016/02/01/comparing-npm-with-ruby/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://localhost:2368/2016/03/27/using-vi-editor/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
                     <span class="hidden">Google+</span>
                 </a>
             </section>
@@ -325,16 +504,10 @@ h1 {
 </main>
 
 <aside class="read-next">
-    <a class="read-next-story no-cover" href="../../03/basic-unix-commands-for-geek/">
+    <a class="read-next-story prev no-cover" href="../../../02/03/basic-unix-commands-for-geek/">
         <section class="post">
             <h2>Basic Unix Commands for Geek</h2>
             <p>Introduction This document requires intermediate level of shell commands knowledge. For starters visit http://mally.stanford.edu/~sr/computing/…</p>
-        </section>
-    </a>
-    <a class="read-next-story prev " style="background-image: url(../../../../content/images/2016/02/_JIM1932.JPG)" href="../../../../2015/12/21/chintan-patel-resume/">
-        <section class="post">
-            <h2>About Me</h2>
-            <p>I am a Full-Stack Developer and geek who is well experienced with Mongo-Express-Angular-Node (MEAN) and Unix/Linux-Apache-MySQL-PHP (LAMP) stack.…</p>
         </section>
     </a>
 </aside>
