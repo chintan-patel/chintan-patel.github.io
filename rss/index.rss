@@ -1,4 +1,4 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Passion</title><description>Stories, Tutorials, Tech updates and News</description><link>http://localhost:2368/</link><generator>Ghost 0.7</generator><lastBuildDate>Tue, 03 May 2016 02:26:35 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Using Vi editor</title><description>&lt;h3 id="guideaudience"&gt;Guide Audience&lt;/h3&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Passion</title><description>Stories, Tutorials, Tech updates and News</description><link>http://localhost:2368/</link><generator>Ghost 0.7</generator><lastBuildDate>Tue, 03 May 2016 02:46:57 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Using Vi editor</title><description>&lt;h3 id="guideaudience"&gt;Guide Audience&lt;/h3&gt;
 
 &lt;p&gt;Not using Unix or Macbook Terminal because you are scared of &lt;code&gt;vi&lt;/code&gt; or &lt;code&gt;vim&lt;/code&gt;, this is the guide for you...!&lt;/p&gt;
 
@@ -444,11 +444,11 @@ matching-pattern
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#portfolio"&gt;Portfolio&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#breaking-the-ice"&gt;Breaking the Ice&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#my-networks"&gt;My Networks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#breakingtheice"&gt;Breaking the Ice&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#mynetworks"&gt;My Networks&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#methodology"&gt;Methodology&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#work-experience"&gt;Work Experience&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#other-experiences"&gt;Other Experiences&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#workexperience"&gt;Work Experience&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#otherexperiences"&gt;Other Experiences&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id="portfolio"&gt;Portfolio&lt;/h2&gt;
@@ -460,11 +460,11 @@ We build a application which shows different images based on&lt;/p&gt;</descript
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#portfolio"&gt;Portfolio&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#breaking-the-ice"&gt;Breaking the Ice&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#my-networks"&gt;My Networks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#breakingtheice"&gt;Breaking the Ice&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#mynetworks"&gt;My Networks&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#methodology"&gt;Methodology&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#work-experience"&gt;Work Experience&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#other-experiences"&gt;Other Experiences&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#workexperience"&gt;Work Experience&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#otherexperiences"&gt;Other Experiences&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id="portfolio"&gt;Portfolio&lt;/h2&gt;
