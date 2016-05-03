@@ -1,4 +1,4 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Passion</title><description>Stories, Tutorials, Tech updates and News</description><link>http://localhost:2368/</link><generator>Ghost 0.7</generator><lastBuildDate>Tue, 03 May 2016 02:46:57 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Using Vi editor</title><description>&lt;h3 id="guideaudience"&gt;Guide Audience&lt;/h3&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Passion</title><description>Stories, Tutorials, Tech updates and News</description><link>http://localhost:2368/</link><generator>Ghost 0.7</generator><lastBuildDate>Tue, 03 May 2016 02:58:37 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Using Vi editor</title><description>&lt;h3 id="guideaudience"&gt;Guide Audience&lt;/h3&gt;
 
 &lt;p&gt;Not using Unix or Macbook Terminal because you are scared of &lt;code&gt;vi&lt;/code&gt; or &lt;code&gt;vim&lt;/code&gt;, this is the guide for you...!&lt;/p&gt;
 
@@ -479,15 +479,20 @@ We build a application which shows different images based on the distance data. 
 &lt;p&gt;&lt;strong&gt;at &lt;a href="https://twitter.com/orlandodevs"&gt;#OrlandoDevs&lt;/a&gt; React Hack Night&lt;/strong&gt; &lt;br&gt;
 We tried to build a simple voting application using ReactJS. This application uses React, NodeJS and Express.&lt;/p&gt;
 
-&lt;h6 id="socialsentimentanalyzerng1httpsgithubcomchintanpatelsocialsentianalyzer"&gt;&lt;a href="https://github.com/chintan-patel/social-senti-analyzer"&gt;Social Sentiment Analyzer - ng 1&lt;/a&gt;&lt;/h6&gt;
+&lt;h6 id="socialsentimentanalyzerangular1httpsgithubcomchintanpatelsocialsentianalyzer"&gt;&lt;a href="https://github.com/chintan-patel/social-senti-analyzer"&gt;Social Sentiment Analyzer - Angular 1&lt;/a&gt;&lt;/h6&gt;
 
 &lt;p&gt;&lt;strong&gt;at NeoReach Hack&lt;/strong&gt; &lt;br&gt;
 We build an application which uses MEAN stack. The application requests a twitter hash, gets the most recent 100 tweets and based on each tweet, shows the graph of how positive/negative/neutral users' emotions are. The system uses MongoLabs, Express 4, Angular 1.5, D3 graphs and NodeJS. The data is stored in MongoDB for future comparison.&lt;/p&gt;
 
-&lt;h6 id="socialsentimentanalyzerng2httpsgithubcomchintanpatelangular2demo"&gt;&lt;a href="https://github.com/chintan-patel/angular2-demo"&gt;Social Sentiment Analyzer - ng 2&lt;/a&gt;&lt;/h6&gt;
+&lt;h6 id="socialsentimentanalyzerangular2httpsgithubcomchintanpatelangular2demo"&gt;&lt;a href="https://github.com/chintan-patel/angular2-demo"&gt;Social Sentiment Analyzer - Angular 2&lt;/a&gt;&lt;/h6&gt;
 
 &lt;p&gt;&lt;strong&gt;at Disney Angular 2 Hack Night&lt;/strong&gt; &lt;br&gt;
 This application is the same as mentioned in previous section. This project demonstrate use of Angular 2.&lt;/p&gt;
+
+&lt;h6 id="videostreamingapplicationhttpsgithubcomrupamroyvideeoos"&gt;&lt;a href="https://github.com/rupamroy/Videeoos"&gt;Video Streaming Application&lt;/a&gt;&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;at Hack-a-thon&lt;/strong&gt; &lt;br&gt;
+The application allows user to upload the music and videos. The application was hosted on Angular 1, Amazon Web Services(AWS). EC2 instances, S3, Cloudfront, Transcoders and DynamoDB services.&lt;/p&gt;
 
 &lt;h2 id="breakingtheice"&gt;Breaking the Ice&lt;/h2&gt;
 
