@@ -1,4 +1,238 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Passion</title><description>Stories, Tutorials, Tech updates and News</description><link>http://localhost:2368/</link><generator>Ghost 0.7</generator><lastBuildDate>Tue, 16 Feb 2016 04:57:00 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Basic Unix Commands for Geek</title><description>Blog is about basic unix commands which every developer must know. These commands will make you feel better and more professional.</description><link>http://localhost:2368/basic-unix-commands-for-geek/</link><guid isPermaLink="false">8e4f6c3a-82a8-4d0f-8c8e-fd825420553f</guid><category>unix</category><category>commands</category><category>vi editor</category><dc:creator>Chintan Patel</dc:creator><pubDate>Thu, 04 Feb 2016 03:56:41 GMT</pubDate><content:encoded>&lt;h1 id="introduction"&gt;Introduction&lt;/h1&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Passion</title><description>Stories, Tutorials, Tech updates and News</description><link>http://localhost:2368/</link><generator>Ghost 0.7</generator><lastBuildDate>Tue, 03 May 2016 02:02:27 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Using Vi editor</title><description>&lt;h3 id="guideaudience"&gt;Guide Audience&lt;/h3&gt;
+
+&lt;p&gt;Not using Unix or Macbook Terminal because you are scared of &lt;code&gt;vi&lt;/code&gt; or &lt;code&gt;vim&lt;/code&gt;, this is the guide for you...!&lt;/p&gt;
+
+&lt;p&gt;Do not worry, this steps will make you familiar with commands.&lt;/p&gt;
+
+&lt;p&gt;Before we get started, download this sample file, to test this commands.&lt;/p&gt;
+
+&lt;h3 id="modesinvi"&gt;Modes in vi&lt;/h3&gt;
+
+&lt;p&gt;There are&lt;/p&gt;</description><link>http://localhost:2368/2016/03/27/using-vi-editor/</link><guid isPermaLink="false">47d153e6-2b9f-4fa9-964a-cd124f51399b</guid><dc:creator>Chintan Patel</dc:creator><pubDate>Mon, 28 Mar 2016 03:41:30 GMT</pubDate><content:encoded>&lt;h3 id="guideaudience"&gt;Guide Audience&lt;/h3&gt;
+
+&lt;p&gt;Not using Unix or Macbook Terminal because you are scared of &lt;code&gt;vi&lt;/code&gt; or &lt;code&gt;vim&lt;/code&gt;, this is the guide for you...!&lt;/p&gt;
+
+&lt;p&gt;Do not worry, this steps will make you familiar with commands.&lt;/p&gt;
+
+&lt;p&gt;Before we get started, download this sample file, to test this commands.&lt;/p&gt;
+
+&lt;h3 id="modesinvi"&gt;Modes in vi&lt;/h3&gt;
+
+&lt;p&gt;There are three &lt;code&gt;vi&lt;/code&gt; modes:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2016/03/27/using-vi-editor/index.html#vimode"&gt;&lt;strong&gt;vi mode&lt;/strong&gt;&lt;/a&gt; - This is to use cut, copy and paste commands.
+&lt;ul&gt;&lt;li&gt;Press &lt;code&gt;ESC&lt;/code&gt; to return to &lt;code&gt;vi&lt;/code&gt; mode.&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2016/03/27/using-vi-editor/index.html#inputinsertmode"&gt;&lt;strong&gt;input/insert mode&lt;/strong&gt;&lt;/a&gt;
+&lt;ul&gt;&lt;li&gt;Press &lt;code&gt;i&lt;/code&gt; to start insert mode&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2016/03/27/using-vi-editor/index.html#commandmode"&gt;&lt;strong&gt;command mode&lt;/strong&gt;&lt;/a&gt; - This is used editor settings like line numbers, file operations, etc.
+&lt;ul&gt;&lt;li&gt;Press &lt;code&gt;:&lt;/code&gt; to start command mode&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id="vimode"&gt;vi mode&lt;/h4&gt;
+
+&lt;p&gt;Make sure that all the commands are performed in &lt;code&gt;ESC&lt;/code&gt; mode.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Action: Cut&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Navigate to a line&lt;/li&gt;
+&lt;li&gt;Press &lt;code&gt;dd&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Behavior: The line will disappear and saved in clipboard.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Action: Undo changes&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Press &lt;code&gt;u&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Action: Redo changes&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Press &lt;code&gt;CTRL+r&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Action: Copy&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Navigate to a line&lt;/li&gt;
+&lt;li&gt;Press &lt;code&gt;yy&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Behavior: The line will disappear and saved in clipboard.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Action: Paste&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Perform &lt;strong&gt;Cut/Copy&lt;/strong&gt; action&lt;/li&gt;
+&lt;li&gt;Navigate to a line&lt;/li&gt;
+&lt;li&gt;Press &lt;code&gt;p&lt;/code&gt;for paste&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Behavior: The line will appear in next line to the cursor.&lt;/p&gt;
+
+&lt;h4 id="somemorevimodecommands"&gt;some more vi mode commands...&lt;/h4&gt;
+
+&lt;table&gt;
+
+&lt;tbody&gt;
+
+&lt;tr&gt;
+
+&lt;th&gt;Command&lt;/th&gt;
+
+&lt;th&gt;Action&lt;/th&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;Press $&lt;/td&gt;
+
+&lt;td&gt;To End Of Line (EOL)&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;Press 0&lt;/td&gt;
+
+&lt;td&gt;To Start Of Line&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;Press :1&lt;/td&gt;
+
+&lt;td&gt;To jump to First line of File&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;Press :12&lt;/td&gt;
+
+&lt;td&gt;To jump to line #12 of the file&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;Press SHIFT+G&lt;/td&gt;
+
+&lt;td&gt;To jump to Last line of File&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;Press dd&lt;/td&gt;
+
+&lt;td&gt;To cut the line pointed by cursor&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;Type /search term and ENTER&lt;/td&gt;
+
+&lt;td&gt;to search the word in file&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;Press w&lt;/td&gt;
+
+&lt;td&gt;To jump the words in the line&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;/tbody&gt;
+
+&lt;/table&gt;
+
+&lt;h4 id="inputinsertmode"&gt;Input / Insert Mode&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;Action: Edit the document&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Always Press &lt;code&gt;ESC&lt;/code&gt;, to clear modes and back to &lt;code&gt;vi mode&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Press &lt;code&gt;i&lt;/code&gt; or &lt;code&gt;a&lt;/code&gt; or &lt;code&gt;o&lt;/code&gt; to start the insert mode&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Behavior: This will behave like normal editor, use keyboard arrows to navigate between lines.&lt;/p&gt;
+
+&lt;h4 id="commandmode"&gt;Command Mode&lt;/h4&gt;
+
+&lt;p&gt;To Start this mode Press &lt;code&gt;:&amp;lt;command&amp;gt;&lt;/code&gt;, following table shows the details of usages:&lt;/p&gt;
+
+&lt;table&gt;
+
+&lt;tbody&gt;
+
+&lt;tr&gt;
+
+&lt;th&gt;Command&lt;/th&gt;
+
+&lt;th&gt;Action&lt;/th&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;:q&lt;/td&gt;
+
+&lt;td&gt;to close the file&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;:w&lt;/td&gt;
+
+&lt;td&gt;to save the file&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;:wq&lt;/td&gt;
+
+&lt;td&gt;to save and close the file&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;:w newfile.txt&lt;/td&gt;
+
+&lt;td&gt;to save as `newfile.txt`&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;:q!&lt;/td&gt;
+
+&lt;td&gt;to close file without saving changes&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;:wq!&lt;/td&gt;
+
+&lt;td&gt;to save and close file&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;/tbody&gt;
+
+&lt;/table&gt;</content:encoded></item><item><title>Basic Unix Commands for Geek</title><description>Blog is about basic unix commands which every developer must know. These commands will make you feel better and more professional.</description><link>http://localhost:2368/2016/02/03/basic-unix-commands-for-geek/</link><guid isPermaLink="false">8e4f6c3a-82a8-4d0f-8c8e-fd825420553f</guid><category>unix</category><category>commands</category><category>vi editor</category><dc:creator>Chintan Patel</dc:creator><pubDate>Thu, 04 Feb 2016 03:56:41 GMT</pubDate><content:encoded>&lt;h1 id="introduction"&gt;Introduction&lt;/h1&gt;
 
 &lt;p&gt;This document requires intermediate level of shell commands knowledge. For starters visit &lt;a href="http://mally.stanford.edu/~sr/computing/basic-unix.html"&gt;http://mally.stanford.edu/~sr/computing/basic-unix.html&lt;/a&gt;&lt;/p&gt;
 
@@ -14,8 +248,8 @@
 &lt;p&gt;Lets get started quickly...&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;&lt;a href="http://localhost:2368/basic-unix-commands-for-geek/#basics"&gt;Basics&lt;/a&gt;  &lt;/li&gt;
-&lt;li&gt;&lt;a href="http://localhost:2368/basic-unix-commands-for-geek/#advanced"&gt;Advanced&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2016/02/03/basic-unix-commands-for-geek/#basics"&gt;Basics&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2016/02/03/basic-unix-commands-for-geek/#advanced"&gt;Advanced&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h1 id="basics"&gt;Basics&lt;/h1&gt;
@@ -23,15 +257,15 @@
 &lt;h3 id="commands"&gt;Commands&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="http://localhost:2368/basic-unix-commands-for-geek/#hostname"&gt;hostname&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://localhost:2368/basic-unix-commands-for-geek/#ls"&gt;ls&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://localhost:2368/basic-unix-commands-for-geek/#rm"&gt;rm&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://localhost:2368/basic-unix-commands-for-geek/#wc"&gt;wc&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://localhost:2368/basic-unix-commands-for-geek/#grep"&gt;grep&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://localhost:2368/basic-unix-commands-for-geek/#find"&gt;find&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://localhost:2368/basic-unix-commands-for-geek/#watch"&gt;watch&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://localhost:2368/basic-unix-commands-for-geek/#top"&gt;top&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://localhost:2368/basic-unix-commands-for-geek/#tree"&gt;tree&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2016/02/03/basic-unix-commands-for-geek/#hostname"&gt;hostname&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2016/02/03/basic-unix-commands-for-geek/#ls"&gt;ls&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2016/02/03/basic-unix-commands-for-geek/#rm"&gt;rm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2016/02/03/basic-unix-commands-for-geek/#wc"&gt;wc&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2016/02/03/basic-unix-commands-for-geek/#grep"&gt;grep&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2016/02/03/basic-unix-commands-for-geek/#find"&gt;find&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2016/02/03/basic-unix-commands-for-geek/#watch"&gt;watch&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2016/02/03/basic-unix-commands-for-geek/#top"&gt;top&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2016/02/03/basic-unix-commands-for-geek/#tree"&gt;tree&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id="hostname"&gt;hostname&lt;/h2&gt;
@@ -165,7 +399,7 @@ matching-pattern
 
 &lt;p&gt;Search for all strings matching in file &lt;code&gt;lookup-patterns-file&lt;/code&gt; against folders&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;find . -type f | xargs grep -f patterns-file&lt;/code&gt;&lt;/p&gt;</content:encoded></item><item><title>Comparing Package manager</title><description>Comparing the package manager for Node, Ruby and PHP, includes, default public repository, dependency command, dependency lock, etc.</description><link>http://localhost:2368/comparing-npm-with-ruby/</link><guid isPermaLink="false">7f18dec7-3d98-43e1-8bd7-cca04915db7b</guid><category>npm</category><category>bundler</category><category>composer</category><dc:creator>Chintan Patel</dc:creator><pubDate>Tue, 02 Feb 2016 04:38:34 GMT</pubDate><content:encoded>&lt;p&gt;Following is the comparison in the different language:  &lt;/p&gt;
+&lt;p&gt;&lt;code&gt;find . -type f | xargs grep -f patterns-file&lt;/code&gt;&lt;/p&gt;</content:encoded></item><item><title>Comparing Package manager</title><description>Comparing the package manager for Node, Ruby and PHP, includes, default public repository, dependency command, dependency lock, etc.</description><link>http://localhost:2368/2016/02/01/comparing-npm-with-ruby/</link><guid isPermaLink="false">7f18dec7-3d98-43e1-8bd7-cca04915db7b</guid><category>npm</category><category>bundler</category><category>composer</category><dc:creator>Chintan Patel</dc:creator><pubDate>Tue, 02 Feb 2016 04:38:34 GMT</pubDate><content:encoded>&lt;p&gt;Following is the comparison in the different language:  &lt;/p&gt;
 
 &lt;table&gt;  
 &lt;thead&gt;  
@@ -208,10 +442,52 @@ matching-pattern
 &lt;/tbody&gt;  
 &lt;/table&gt;</content:encoded></item><item><title>About Me</title><description>&lt;p&gt;I am a Full-Stack Developer and geek who is well experienced with Mongo-Express-Angular-Node (MEAN) and Unix/Linux-Apache-MySQL-PHP (LAMP) stack. &lt;/p&gt;
 
-&lt;h2 id="breakingtheice"&gt;Breaking the Ice&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#portfolio"&gt;Portfolio&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#breaking-the-ice"&gt;Breaking the Ice&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#my-networks"&gt;My Networks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#methodology"&gt;Methodology&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#work-experience"&gt;Work Experience&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#other-experiences"&gt;Other Experiences&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="portfolio"&gt;Portfolio&lt;/h2&gt;
+
+&lt;h6 id="picturebuddyhttpsgithubcomclarkiong2fun"&gt;&lt;a href="https://github.com/clarkio/ng2fun"&gt;Picture Buddy&lt;/a&gt;&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Winner at &lt;a href="https://twitter.com/orlandodevs"&gt;#OrlandoDevs&lt;/a&gt; Angular 2 Hack Night&lt;/strong&gt; &lt;br&gt;
+We build a application which shows different images based on&lt;/p&gt;</description><link>http://localhost:2368/2015/12/21/chintan-patel-resume/</link><guid isPermaLink="false">2289b587-e35f-410b-8209-f7c429e2ad8f</guid><category>Resume</category><dc:creator>Chintan Patel</dc:creator><pubDate>Mon, 21 Dec 2015 17:23:00 GMT</pubDate><media:content url="http://localhost:2368/content/images/2016/02/_JIM1932.JPG" medium="image"/><content:encoded>&lt;img src="http://localhost:2368/content/images/2016/02/_JIM1932.JPG" alt="About Me"&gt;&lt;p&gt;I am a Full-Stack Developer and geek who is well experienced with Mongo-Express-Angular-Node (MEAN) and Unix/Linux-Apache-MySQL-PHP (LAMP) stack. &lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;I am Passionate about Object-Oriented Programming &lt;code&gt;(OOP)&lt;/code&gt; for front-end JS framework like &lt;code&gt;AngularJS&lt;/code&gt; and back-end scripts like &lt;code&gt;(PHP/JavaScript)&lt;/code&gt;. Undoubtedly worked on &lt;code&gt;HTML/CSS&lt;/code&gt;, also, knows all &lt;code&gt;IE&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;</description><link>http://localhost:2368/chintan-patel-resume/</link><guid isPermaLink="false">2289b587-e35f-410b-8209-f7c429e2ad8f</guid><category>Resume</category><dc:creator>Chintan Patel</dc:creator><pubDate>Mon, 21 Dec 2015 17:23:00 GMT</pubDate><media:content url="http://localhost:2368/content/images/2016/02/_JIM1932.JPG" medium="image"/><content:encoded>&lt;img src="http://localhost:2368/content/images/2016/02/_JIM1932.JPG" alt="About Me"&gt;&lt;p&gt;I am a Full-Stack Developer and geek who is well experienced with Mongo-Express-Angular-Node (MEAN) and Unix/Linux-Apache-MySQL-PHP (LAMP) stack. &lt;/p&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#portfolio"&gt;Portfolio&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#breaking-the-ice"&gt;Breaking the Ice&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#my-networks"&gt;My Networks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#methodology"&gt;Methodology&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#work-experience"&gt;Work Experience&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#other-experiences"&gt;Other Experiences&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="portfolio"&gt;Portfolio&lt;/h2&gt;
+
+&lt;h6 id="picturebuddyhttpsgithubcomclarkiong2fun"&gt;&lt;a href="https://github.com/clarkio/ng2fun"&gt;Picture Buddy&lt;/a&gt;&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Winner at &lt;a href="https://twitter.com/orlandodevs"&gt;#OrlandoDevs&lt;/a&gt; Angular 2 Hack Night&lt;/strong&gt; &lt;br&gt;
+We build a application which shows different images based on the distance data. We used Arduino board with Proximity sensor to get the distance. The NodeJS server receives the distance from the board, does minor calculated distance from millimeters (mm) to meters(m) and send to Angular 2 front-end using Socket.IO. Based on the distance of the object pointed to the proximity sensor, different images are displayed on web page.&lt;/p&gt;
+
+&lt;h6 id="votemyhackhttpsgithubcomchintanpatelreacthacknight"&gt;&lt;a href="https://github.com/chintan-patel/react-hack-night"&gt;Vote My hack&lt;/a&gt;&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;at &lt;a href="https://twitter.com/orlandodevs"&gt;#OrlandoDevs&lt;/a&gt; React Hack Night&lt;/strong&gt; &lt;br&gt;
+We tried to build a simple voting application using ReactJS. This application uses React, NodeJS and Express.&lt;/p&gt;
+
+&lt;h6 id="socialsentimentanalyzerng1httpsgithubcomchintanpatelsocialsentianalyzer"&gt;&lt;a href="https://github.com/chintan-patel/social-senti-analyzer"&gt;Social Sentiment Analyzer - ng 1&lt;/a&gt;&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;at NeoReach Hack&lt;/strong&gt; &lt;br&gt;
+We build an application which uses MEAN stack. The application requests a twitter hash, gets the most recent 100 tweets and based on each tweet, shows the graph of how positive/negative/neutral users' emotions are. The system uses MongoLabs, Express 4, Angular 1.5, D3 graphs and NodeJS. The data is stored in MongoDB for future comparison.&lt;/p&gt;
+
+&lt;h6 id="socialsentimentanalyzerng2httpsgithubcomchintanpatelangular2demo"&gt;&lt;a href="https://github.com/chintan-patel/angular2-demo"&gt;Social Sentiment Analyzer - ng 2&lt;/a&gt;&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;at Disney Angular 2 Hack Night&lt;/strong&gt; &lt;br&gt;
+This application is the same as mentioned in previous section. This project demonstrate use of Angular 2.&lt;/p&gt;
 
 &lt;h2 id="breakingtheice"&gt;Breaking the Ice&lt;/h2&gt;
 
@@ -281,4 +557,21 @@ matching-pattern
 &lt;li&gt;Worked with UX team to create a pixel perfect HTML views&lt;/li&gt;
 &lt;li&gt;Migrated the source code repository from &lt;code&gt;svn&lt;/code&gt; with &lt;code&gt;git&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Migrated the UI from Bootstrap v2 to Bootstrap v3&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="mynetworks"&gt;My Networks&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href="https://github.com/chintan-patel"&gt;Github&lt;/a&gt;
+&lt;a href="https://twitter.com/chintspassion"&gt;Twitter&lt;/a&gt;
+&lt;a href="https://www.linkedin.com/in/chintspassion"&gt;LinkedIn&lt;/a&gt;
+&lt;a href="https://www.hackerrank.com/chintspassion"&gt;Hacker Rank&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id="otherexperiences"&gt;Other Experiences&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Software Engineer Intern&lt;/strong&gt; - Solar Metrology, New York&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Freelancer&lt;/strong&gt; - &lt;a href="http://www.justgpstracking.com"&gt;justgpstracking.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Freelancer&lt;/strong&gt; - &lt;a href="http://www.quantum-wireless.com"&gt;quantum-wireless.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Freelancer&lt;/strong&gt; - &lt;a href="http://www.jatched.com"&gt;jatched.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Software Engineer&lt;/strong&gt; - &lt;a href="http://www.infosys.com"&gt;infosys.com&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item></channel></rss>
