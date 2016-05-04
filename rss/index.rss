@@ -1,4 +1,199 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Passion</title><description>Stories, Tutorials, Tech updates and News</description><link>http://localhost:2368/</link><generator>Ghost 0.7</generator><lastBuildDate>Tue, 03 May 2016 03:03:10 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Using Vi editor</title><description>&lt;h3 id="guideaudience"&gt;Guide Audience&lt;/h3&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Passion</title><description>Stories, Tutorials, Tech updates and News</description><link>http://localhost:2368/</link><generator>Ghost 0.7</generator><lastBuildDate>Wed, 04 May 2016 18:11:06 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Basic Command Line</title><description>&lt;h1 id="introduction"&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;This document requires intermediate level of shell commands knowledge. For starters visit &lt;a href="http://mally.stanford.edu/~sr/computing/basic-unix.html"&gt;http://mally.stanford.edu/~sr/computing/basic-unix.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id="benefitsoflearning"&gt;Benefits of learning&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Look professional&lt;/li&gt;
+&lt;li&gt;Quicker results&lt;/li&gt;
+&lt;li&gt;No need of mouse and clicks&lt;/li&gt;
+&lt;li&gt;Makes you feel good&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Lets get started quickly...&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2016/05/04/basic-command-line/#basics"&gt;Basics&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2016/05/04/basic-command-line/#advanced"&gt;Advanced&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id="basics"&gt;Basics&lt;/h1&gt;
+
+&lt;h3 id="commands"&gt;Commands&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2016/05/04/basic-command-line/#hostname"&gt;hostname&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2016/05/04/basic-command-line/#ls"&gt;ls&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2016/05/04/basic-command-line/#rm"&gt;rm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2016/05/04/basic-command-line/#wc"&gt;wc&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description><link>http://localhost:2368/2016/05/04/basic-command-line/</link><guid isPermaLink="false">a229720c-4f9e-43e0-b2a2-e35bb51bf7b8</guid><dc:creator>Chintan Patel</dc:creator><pubDate>Wed, 04 May 2016 18:09:49 GMT</pubDate><content:encoded>&lt;h1 id="introduction"&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;This document requires intermediate level of shell commands knowledge. For starters visit &lt;a href="http://mally.stanford.edu/~sr/computing/basic-unix.html"&gt;http://mally.stanford.edu/~sr/computing/basic-unix.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id="benefitsoflearning"&gt;Benefits of learning&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Look professional&lt;/li&gt;
+&lt;li&gt;Quicker results&lt;/li&gt;
+&lt;li&gt;No need of mouse and clicks&lt;/li&gt;
+&lt;li&gt;Makes you feel good&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Lets get started quickly...&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2016/05/04/basic-command-line/#basics"&gt;Basics&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2016/05/04/basic-command-line/#advanced"&gt;Advanced&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id="basics"&gt;Basics&lt;/h1&gt;
+
+&lt;h3 id="commands"&gt;Commands&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2016/05/04/basic-command-line/#hostname"&gt;hostname&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2016/05/04/basic-command-line/#ls"&gt;ls&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2016/05/04/basic-command-line/#rm"&gt;rm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2016/05/04/basic-command-line/#wc"&gt;wc&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2016/05/04/basic-command-line/#grep"&gt;grep&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2016/05/04/basic-command-line/#find"&gt;find&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2016/05/04/basic-command-line/#watch"&gt;watch&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2016/05/04/basic-command-line/#top"&gt;top&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2016/05/04/basic-command-line/#tree"&gt;tree&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="hostname"&gt;hostname&lt;/h2&gt;
+
+&lt;p&gt;To get the hostname of the current system.&lt;/p&gt;
+
+&lt;h2 id="ls"&gt;ls&lt;/h2&gt;
+
+&lt;h3 id="lsltra"&gt;ls -ltra&lt;/h3&gt;
+
+&lt;p&gt;Say it loud &lt;strong&gt;&lt;em&gt;l s minus l t r a&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Always use &lt;code&gt;ls -ltra&lt;/code&gt; for listing directories, it will show all hidden as well as arrange files as per last modified date.&lt;/p&gt;
+
+&lt;h2 id="rm"&gt;rm&lt;/h2&gt;
+
+&lt;h3 id="rmrffiledirectory"&gt;rm -rf &lt;file directory=""&gt;&lt;/file&gt;&lt;/h3&gt;
+
+&lt;p&gt;Say it loud &lt;strong&gt;&lt;em&gt;r m minus r f&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Used to remove directory/files forcefully. &lt;/p&gt;
+
+&lt;p&gt;Must be used carefully, as it deletes &lt;em&gt;all files and folders&lt;/em&gt; within directory without prompt&lt;/p&gt;
+
+&lt;h2 id="wc"&gt;wc&lt;/h2&gt;
+
+&lt;h3 id="wcl"&gt;wc -l&lt;/h3&gt;
+
+&lt;p&gt;Say it loud &lt;strong&gt;&lt;em&gt;w c minus l&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;It will count number of lines in a file&lt;/p&gt;
+
+&lt;h2 id="grep"&gt;grep&lt;/h2&gt;
+
+&lt;h3 id="grepsearchstringfilename"&gt;&lt;code&gt;grep "&amp;lt;search string&amp;gt;" &amp;lt;filename&amp;gt;&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;Say it loud &lt;strong&gt;&lt;em&gt;grep&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Grep will search the string in the file and will print the line to standard output&lt;/p&gt;
+
+&lt;h2 id="find"&gt;find&lt;/h2&gt;
+
+&lt;h3 id="findtypef"&gt;find . -type f&lt;/h3&gt;
+
+&lt;p&gt;Say it loud &lt;strong&gt;&lt;em&gt;find dot minus type f&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;find&lt;/code&gt; - command&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.&lt;/code&gt; - current directory&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-type f&lt;/code&gt; - Only list files alternatively use &lt;code&gt;type -d&lt;/code&gt; to find only directories&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;List all the files recursively in all folders of current directory.&lt;/p&gt;
+
+&lt;h2 id="watch"&gt;watch&lt;/h2&gt;
+
+&lt;h3 id="watchcommand"&gt;&lt;code&gt;watch &amp;lt;command&amp;gt;&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;Say it loud &lt;code&gt;watch&lt;/code&gt; &lt;br&gt;
+This command will re-run the command every 2 secs (by default). &lt;/p&gt;
+
+&lt;p&gt;Its good when you want to monitor or watch for files. eg. execute this command  &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mkdir new_dir  
+cd new_dir  
+watch "ls -tlra"`  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and open another terminal window  &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cd new_dir  
+touch new_file  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The first window will show the new file added within 2 seconds.&lt;/p&gt;
+
+&lt;p&gt;For OSX, use &lt;code&gt;brew install watch&lt;/code&gt; if command does not work&lt;/p&gt;
+
+&lt;h2 id="top"&gt;top&lt;/h2&gt;
+
+&lt;p&gt;Say it loud &lt;code&gt;top&lt;/code&gt; &lt;/p&gt;
+
+&lt;p&gt;Its command line activity monitor/ task manager for terminal&lt;/p&gt;
+
+&lt;p&gt;Suprise yourself with &lt;code&gt;brew install htop&lt;/code&gt; and then use &lt;code&gt;htop&lt;/code&gt; instead.&lt;/p&gt;
+
+&lt;h2 id="tree"&gt;tree&lt;/h2&gt;
+
+&lt;h3 id="treel2"&gt;tree -L 2&lt;/h3&gt;
+
+&lt;p&gt;Say it loud &lt;code&gt;tree minus L two&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;It will generate a tree view for directories and files with level 2&lt;/p&gt;
+
+&lt;p&gt;Install via &lt;code&gt;brew install tree&lt;/code&gt;&lt;/p&gt;
+
+&lt;h1 id="advanced"&gt;Advanced&lt;/h1&gt;
+
+&lt;h2 id="combinefindandgrepcommand"&gt;Combine find and grep command&lt;/h2&gt;
+
+&lt;p&gt;List all the files in current directory with &lt;code&gt;.js&lt;/code&gt; file extension&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;find . -type f | grep ".js$"&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id="combinefindxargsandgrepcommand"&gt;Combine find, xargs and grep command&lt;/h2&gt;
+
+&lt;p&gt;List all the files in current directory with 'foo' word&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;find . -type f | xargs grep "foo"&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id="combinefindxargsandgrepcommandwithexcludesomefolders"&gt;Combine find, xargs and grep command with exclude some folders&lt;/h2&gt;
+
+&lt;p&gt;List all the files in current directory with 'foo' word except file path having in &lt;code&gt;node_modules&lt;/code&gt; and &lt;code&gt;bower_components&lt;/code&gt; folder&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;find . -type f | egrep -v "\/node_modules\/|\/bower_components\/" | xargs grep "foo"&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id="searchmultiplestringsinlistoffiles"&gt;Search multiple strings in list of files&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;find . -type f | xargs egrep "foo|bar"&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id="searchmultiplestringinlistoffileswhereallpatternsareinafile"&gt;Search multiple string in list of files where all patterns are in a file&lt;/h2&gt;
+
+&lt;p&gt;Create a file with string needs to be searched for:  &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ cat lookup-patterns-file
+Output:  
+foo  
+bar  
+matching-pattern  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Search for all strings matching in file &lt;code&gt;lookup-patterns-file&lt;/code&gt; against folders&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;find . -type f | xargs grep -f patterns-file&lt;/code&gt;&lt;/p&gt;</content:encoded></item><item><title>Using Vi editor</title><description>&lt;h3 id="guideaudience"&gt;Guide Audience&lt;/h3&gt;
 
 &lt;p&gt;Not using Unix or Macbook Terminal because you are scared of &lt;code&gt;vi&lt;/code&gt; or &lt;code&gt;vim&lt;/code&gt;, this is the guide for you...!&lt;/p&gt;
 
