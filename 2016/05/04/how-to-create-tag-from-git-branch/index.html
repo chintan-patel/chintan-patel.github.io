@@ -3,7 +3,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>How to update the stale git fork</title>
+    <title>How to create tag from git branch</title>
     <meta name="description" content="">
 
     <meta name="HandheldFriendly" content="True">
@@ -19,16 +19,16 @@
     
     <meta property="og:site_name" content="Passion">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="How to update the stale git fork">
-    <meta property="og:description" content="To contribute to the git repository, you must be forking that repository under your account. For first time when you contribute and create the Pull Request the branches of parent and your repository are in sync. But what happens when...">
-    <meta property="og:url" content="http://localhost:2368/2016/05/04/updating-the-git-fork/">
-    <meta property="article:published_time" content="2016-05-05T02:12:05.380Z">
-    <meta property="article:modified_time" content="2016-05-05T02:16:36.042Z">
+    <meta property="og:title" content="How to create tag from git branch">
+    <meta property="og:description" content='Checkout the git branch or hash which needs to be tagged git checkout &amp;lt;hash or branch&amp;gt;   Checkout a branch or git hash git tag -a "v1.0" -m "Creating the tag"   push all the tags to the repository...'>
+    <meta property="og:url" content="http://localhost:2368/2016/05/04/how-to-create-tag-from-git-branch/">
+    <meta property="article:published_time" content="2016-05-05T02:22:47.825Z">
+    <meta property="article:modified_time" content="2016-05-05T02:22:47.824Z">
     
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="How to update the stale git fork">
-    <meta name="twitter:description" content="To contribute to the git repository, you must be forking that repository under your account. For first time when you contribute and create the Pull Request the branches of parent and your repository are in sync. But what happens when...">
-    <meta name="twitter:url" content="http://localhost:2368/2016/05/04/updating-the-git-fork/">
+    <meta name="twitter:title" content="How to create tag from git branch">
+    <meta name="twitter:description" content='Checkout the git branch or hash which needs to be tagged git checkout &amp;lt;hash or branch&amp;gt;   Checkout a branch or git hash git tag -a "v1.0" -m "Creating the tag"   push all the tags to the repository...'>
+    <meta name="twitter:url" content="http://localhost:2368/2016/05/04/how-to-create-tag-from-git-branch/">
     
     <script type="application/ld+json">
 {
@@ -43,11 +43,11 @@
         "sameAs": "https://github.com/chintan-patel",
         "description": null
     },
-    "headline": "How to update the stale git fork",
-    "url": "http://localhost:2368/2016/05/04/updating-the-git-fork/",
-    "datePublished": "2016-05-05T02:12:05.380Z",
-    "dateModified": "2016-05-05T02:16:36.042Z",
-    "description": "To contribute to the git repository, you must be forking that repository under your account. For first time when you contribute and create the Pull Request the branches of parent and your repository are in sync. But what happens when..."
+    "headline": "How to create tag from git branch",
+    "url": "http://localhost:2368/2016/05/04/how-to-create-tag-from-git-branch/",
+    "datePublished": "2016-05-05T02:22:47.825Z",
+    "dateModified": "2016-05-05T02:22:47.824Z",
+    "description": "Checkout the git branch or hash which needs to be tagged git checkout &amp;lt;hash or branch&amp;gt;   Checkout a branch or git hash git tag -a &quot;v1.0&quot; -m &quot;Creating the tag&quot;   push all the tags to the repository..."
 }
     </script>
 
@@ -233,47 +233,27 @@ h1 {
     <article class="post">
 
         <header class="post-header">
-            <h1 class="post-title">How to update the stale git fork</h1>
+            <h1 class="post-title">How to create tag from git branch</h1>
             <section class="post-meta">
                 <time class="post-date" datetime="2016-05-04">04 May 2016</time> 
             </section>
         </header>
 
         <section class="post-content">
-            <p>To contribute to the git repository, you must be forking that repository under your account.</p>
+            <p><strong>Checkout the git branch or hash which needs to be tagged</strong></p>
 
-<p>For first time when you contribute and create the Pull Request the branches of parent and your repository are in sync. But what happens when the parent repository is updated and your forked repository is out-of-date?</p>
+<pre><code>git checkout &lt;hash or branch&gt;  
+</code></pre>
 
-<p>There are two ways to update the fork:</p>
+<p><strong>Checkout a branch or git hash</strong></p>
 
-<ul>
-<li><a href="index.html#usinggithub">Using Github</a></li>
-<li><a href="index.html#usinggitcli">Using git cli</a></li>
-</ul>
+<pre><code>git tag -a "v1.0" -m "Creating the tag"  
+</code></pre>
 
-<h4 id="usinggithub">Using Github,</h4>
+<p><strong>push all the tags to the repository</strong></p>
 
-<ol>
-<li>Create a Pull Request  </li>
-<li>Under Comparing changes view, do following changes: <br>
-<ul><li>Change "base fork" to your repository with <code>develop</code> or whatever branch required.</li>
-<li>Change "head fork" to parent repository with <code>develop</code> or whatever branch required.</li></ul></li>
-<li>Create Pull Request  </li>
-<li>Merge the changes after proper verification and approval.</li>
-</ol>
-
-<h4 id="usinggitcli">Using <code>git cli</code></h4>
-
-<ol>
-<li>Go to the repository and checkout the <code>develop</code> branch.  </li>
-<li>Update the branch - <code>git pull origin develop</code>  </li>
-<li><code>git pull origin https://github.com/otheruser/repo.git develop</code>  </li>
-<li><code>git push origin develop</code></li>
-</ol>
-
-<h6 id="reference">Reference:</h6>
-
-<p><a href="http://stackoverflow.com/questions/7244321/how-do-i-update-a-github-forked-repository">http://stackoverflow.com/questions/7244321/how-do-i-update-a-github-forked-repository</a></p>
+<pre><code>git push --tags  
+</code></pre>
         </section>
 
         <footer class="post-footer">
@@ -296,13 +276,13 @@ h1 {
 
             <section class="share">
                 <h4>Share this post</h4>
-                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=How%20to%20update%20the%20stale%20git%20fork&amp;url=http://localhost:2368/2016/05/04/updating-the-git-fork/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=How%20to%20create%20tag%20from%20git%20branch&amp;url=http://localhost:2368/2016/05/04/how-to-create-tag-from-git-branch/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                     <span class="hidden">Twitter</span>
                 </a>
-                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/2016/05/04/updating-the-git-fork/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/2016/05/04/how-to-create-tag-from-git-branch/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                     <span class="hidden">Facebook</span>
                 </a>
-                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://localhost:2368/2016/05/04/updating-the-git-fork/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://localhost:2368/2016/05/04/how-to-create-tag-from-git-branch/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
                     <span class="hidden">Google+</span>
                 </a>
             </section>
@@ -313,16 +293,10 @@ h1 {
 </main>
 
 <aside class="read-next">
-    <a class="read-next-story no-cover" href="../how-to-create-tag-from-git-branch/">
+    <a class="read-next-story prev no-cover" href="../updating-the-git-fork/">
         <section class="post">
-            <h2>How to create tag from git branch</h2>
-            <p>Checkout the git branch or hash which needs to be tagged git checkout &lt;hash or branch&gt;   Checkout…</p>
-        </section>
-    </a>
-    <a class="read-next-story prev no-cover" href="../../../03/27/using-vi-editor/">
-        <section class="post">
-            <h2>Using Vi editor</h2>
-            <p>Guide Audience Not using Unix or Macbook Terminal because you are scared of vi or vim, this is the…</p>
+            <h2>How to update the stale git fork</h2>
+            <p>To contribute to the git repository, you must be forking that repository under your account. For first time when…</p>
         </section>
     </a>
 </aside>
