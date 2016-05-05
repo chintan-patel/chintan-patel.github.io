@@ -3,8 +3,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>compare package manager</title>
-    <meta name="description" content="Comparing the package manager for Node, Ruby and PHP, includes, default public repository, dependency command, dependency lock, etc.">
+    <title>How to update the stale git fork</title>
+    <meta name="description" content="">
 
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,19 +19,16 @@
     
     <meta property="og:site_name" content="Passion">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="compare package manager">
-    <meta property="og:description" content="Comparing the package manager for Node, Ruby and PHP, includes, default public repository, dependency command, dependency lock, etc.">
-    <meta property="og:url" content="http://localhost:2368/2016/02/01/comparing-npm-with-ruby/">
-    <meta property="article:published_time" content="2016-02-02T04:38:34.681Z">
-    <meta property="article:modified_time" content="2016-02-16T04:16:19.550Z">
-    <meta property="article:tag" content="npm">
-    <meta property="article:tag" content="bundler">
-    <meta property="article:tag" content="composer">
+    <meta property="og:title" content="How to update the stale git fork">
+    <meta property="og:description" content="To contribute to the git repository, you must be forking that repository under your account. For first time when you contribute and create the Pull Request the branches of Parent and your repository are in sync. But what happens when...">
+    <meta property="og:url" content="http://localhost:2368/2016/05/04/updating-the-git-fork/">
+    <meta property="article:published_time" content="2016-05-05T02:12:05.380Z">
+    <meta property="article:modified_time" content="2016-05-05T02:12:08.140Z">
     
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="compare package manager">
-    <meta name="twitter:description" content="Comparing the package manager for Node, Ruby and PHP, includes, default public repository, dependency command, dependency lock, etc.">
-    <meta name="twitter:url" content="http://localhost:2368/2016/02/01/comparing-npm-with-ruby/">
+    <meta name="twitter:title" content="How to update the stale git fork">
+    <meta name="twitter:description" content="To contribute to the git repository, you must be forking that repository under your account. For first time when you contribute and create the Pull Request the branches of Parent and your repository are in sync. But what happens when...">
+    <meta name="twitter:url" content="http://localhost:2368/2016/05/04/updating-the-git-fork/">
     
     <script type="application/ld+json">
 {
@@ -46,12 +43,11 @@
         "sameAs": "https://github.com/chintan-patel",
         "description": null
     },
-    "headline": "compare package manager",
-    "url": "http://localhost:2368/2016/02/01/comparing-npm-with-ruby/",
-    "datePublished": "2016-02-02T04:38:34.681Z",
-    "dateModified": "2016-02-16T04:16:19.550Z",
-    "keywords": "npm, bundler, composer",
-    "description": "Comparing the package manager for Node, Ruby and PHP, includes, default public repository, dependency command, dependency lock, etc."
+    "headline": "How to update the stale git fork",
+    "url": "http://localhost:2368/2016/05/04/updating-the-git-fork/",
+    "datePublished": "2016-05-05T02:12:05.380Z",
+    "dateModified": "2016-05-05T02:12:08.140Z",
+    "description": "To contribute to the git repository, you must be forking that repository under your account. For first time when you contribute and create the Pull Request the branches of Parent and your repository are in sync. But what happens when..."
 }
     </script>
 
@@ -204,7 +200,7 @@ h1 {
 }
 </style>
 </head>
-<body class="post-template tag-npm tag-bundler tag-composer nav-closed">
+<body class="post-template nav-closed">
 
     <div class="nav">
     <h3 class="nav-title">Menu</h3>
@@ -234,58 +230,39 @@ h1 {
 </header>
 
 <main class="content" role="main">
-    <article class="post tag-npm tag-bundler tag-composer featured">
+    <article class="post">
 
         <header class="post-header">
-            <h1 class="post-title">Comparing Package manager</h1>
+            <h1 class="post-title">How to update the stale git fork</h1>
             <section class="post-meta">
-                <time class="post-date" datetime="2016-02-01">01 February 2016</time>  on <a href="../../../../tag/npm/">npm</a>, <a href="../../../../tag/bundler/">bundler</a>, <a href="../../../../tag/composer/">composer</a>
+                <time class="post-date" datetime="2016-05-04">04 May 2016</time> 
             </section>
         </header>
 
         <section class="post-content">
-            <p>Following is the comparison in the different language:  </p>
+            <p>To contribute to the git repository, you must be forking that repository under your account.</p>
 
-<table>  
-<thead>  
-    <th></th>
-    <th>Node</th>
-    <th>Ruby</th>
-    <th>PHP</th>
-</thead>  
-<tbody>  
-<tr>  
-    <td>Package Manager</td>
-    <td>NPM</td>
-    <td>Bundle</td>
-    <td>Composer</td>
-</tr>  
-<tr>  
-    <td>Install dependencies</td>
-    <td>npm install</td>
-    <td>bundle install</td>
-    <td>composer.phar</td>
-</tr>  
-<tr>  
-    <td>Dependency file</td>
-    <td>package.json</td>
-    <td>Gemfile</td>
-    <td>composer.json</td>
-</tr>  
-<tr>  
-    <td>Locking Dependencies</td>
-    <td>npm-shrinkwrap</td>
-    <td>Gemfile.lock</td>
-    <td>composer.lock</td>
-</tr>  
-<tr>  
-    <td>Public Repository</td>
-    <td><a href="https://www.npmjs.com">https://www.npmjs.com</a></td>
-    <td><a href="https://rubygems.org/">https://rubygems.org/</a></td>
-    <td><a href="https://packagist.org/">https://packagist.org/</a></td>
-</tr>  
-</tbody>  
-</table>
+<p>For first time when you contribute and create the Pull Request the branches of Parent and your repository are in sync. But what happens when the parent repository is updated and your forked repository is out-of-date?</p>
+
+<h4 id="usinggithub">Using Github,</h4>
+
+<ol>
+<li>Create a Pull Request  </li>
+<li>Under Comparing changes view, do following changes: <br>
+<ul><li>Change "base fork" to your repository with <code>develop</code> or whatever branch required.</li>
+<li>Change "head fork" to parent repository with <code>develop</code> or whatever branch required.</li></ul></li>
+<li>Create Pull Request  </li>
+<li>Merge the changes after proper verification and approval.</li>
+</ol>
+
+<h4 id="usinggitcli">Using <code>git cli</code></h4>
+
+<ol>
+<li>Go to the repository and checkout the <code>develop</code> branch.  </li>
+<li>Update the branch - <code>git pull origin develop</code>  </li>
+<li><code>git pull origin https://github.com/otheruser/repo.git develop</code>  </li>
+<li><code>git push origin develop</code></li>
+</ol>
         </section>
 
         <footer class="post-footer">
@@ -308,13 +285,13 @@ h1 {
 
             <section class="share">
                 <h4>Share this post</h4>
-                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=Comparing%20Package%20manager&amp;url=http://localhost:2368/2016/02/01/comparing-npm-with-ruby/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=How%20to%20update%20the%20stale%20git%20fork&amp;url=http://localhost:2368/2016/05/04/updating-the-git-fork/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                     <span class="hidden">Twitter</span>
                 </a>
-                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/2016/02/01/comparing-npm-with-ruby/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/2016/05/04/updating-the-git-fork/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                     <span class="hidden">Facebook</span>
                 </a>
-                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://localhost:2368/2016/02/01/comparing-npm-with-ruby/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://localhost:2368/2016/05/04/updating-the-git-fork/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
                     <span class="hidden">Google+</span>
                 </a>
             </section>
@@ -325,16 +302,10 @@ h1 {
 </main>
 
 <aside class="read-next">
-    <a class="read-next-story no-cover" href="../../03/basic-unix-commands-for-geek/">
+    <a class="read-next-story prev no-cover" href="../../../03/27/using-vi-editor/">
         <section class="post">
-            <h2>Basic Unix Commands for Geek</h2>
-            <p>Introduction This document requires intermediate level of shell commands knowledge. For starters visit http://mally.stanford.edu/~sr/computing/…</p>
-        </section>
-    </a>
-    <a class="read-next-story prev " style="background-image: url(../../../../content/images/2016/05/jim.jpg)" href="../../../../2015/12/21/chintan-patel-resume/">
-        <section class="post">
-            <h2>About Me</h2>
-            <p>I am a Full-Stack Developer and geek who is well experienced with Mongo-Express-Angular-Node (MEAN) and Unix/Linux-Apache-MySQL-PHP (LAMP) stack.…</p>
+            <h2>Using Vi editor</h2>
+            <p>Guide Audience Not using Unix or Macbook Terminal because you are scared of vi or vim, this is the…</p>
         </section>
     </a>
 </aside>
