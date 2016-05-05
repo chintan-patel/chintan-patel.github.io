@@ -1,8 +1,15 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Passion</title><description>Stories, Tutorials, Tech updates and News</description><link>http://localhost:2368/</link><generator>Ghost 0.7</generator><lastBuildDate>Thu, 05 May 2016 02:12:30 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>How to update the stale git fork</title><description>&lt;p&gt;To contribute to the git repository, you must be forking that repository under your account.&lt;/p&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Passion</title><description>Stories, Tutorials, Tech updates and News</description><link>http://localhost:2368/</link><generator>Ghost 0.7</generator><lastBuildDate>Thu, 05 May 2016 02:15:47 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>How to update the stale git fork</title><description>&lt;p&gt;To contribute to the git repository, you must be forking that repository under your account.&lt;/p&gt;
 
-&lt;p&gt;For first time when you contribute and create the Pull Request the branches of Parent and your repository are in sync. But what happens when the parent repository is updated and your forked repository is&lt;/p&gt;</description><link>http://localhost:2368/2016/05/04/updating-the-git-fork/</link><guid isPermaLink="false">d7383fa2-920d-4a89-a799-d469a708c8cb</guid><dc:creator>Chintan Patel</dc:creator><pubDate>Thu, 05 May 2016 02:12:05 GMT</pubDate><content:encoded>&lt;p&gt;To contribute to the git repository, you must be forking that repository under your account.&lt;/p&gt;
+&lt;p&gt;For first time when you contribute and create the Pull Request the branches of parent and your repository are in sync. But what happens when the parent repository is updated and your forked repository is&lt;/p&gt;</description><link>http://localhost:2368/2016/05/04/updating-the-git-fork/</link><guid isPermaLink="false">d7383fa2-920d-4a89-a799-d469a708c8cb</guid><dc:creator>Chintan Patel</dc:creator><pubDate>Thu, 05 May 2016 02:12:05 GMT</pubDate><content:encoded>&lt;p&gt;To contribute to the git repository, you must be forking that repository under your account.&lt;/p&gt;
 
-&lt;p&gt;For first time when you contribute and create the Pull Request the branches of Parent and your repository are in sync. But what happens when the parent repository is updated and your forked repository is out-of-date?&lt;/p&gt;
+&lt;p&gt;For first time when you contribute and create the Pull Request the branches of parent and your repository are in sync. But what happens when the parent repository is updated and your forked repository is out-of-date?&lt;/p&gt;
+
+&lt;p&gt;There are two ways to update the fork:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2016/05/04/updating-the-git-fork/#usinggithub"&gt;Using Github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2016/05/04/updating-the-git-fork/#usinggitcli"&gt;Using git cli&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h4 id="usinggithub"&gt;Using Github,&lt;/h4&gt;
 
@@ -22,7 +29,11 @@
 &lt;li&gt;Update the branch - &lt;code&gt;git pull origin develop&lt;/code&gt;  &lt;/li&gt;
 &lt;li&gt;&lt;code&gt;git pull origin https://github.com/otheruser/repo.git develop&lt;/code&gt;  &lt;/li&gt;
 &lt;li&gt;&lt;code&gt;git push origin develop&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;</content:encoded></item><item><title>Using Vi editor</title><description>&lt;h3 id="guideaudience"&gt;Guide Audience&lt;/h3&gt;
+&lt;/ol&gt;
+
+&lt;h6 id="reference"&gt;Reference:&lt;/h6&gt;
+
+&lt;p&gt;&lt;a href="http://stackoverflow.com/questions/7244321/how-do-i-update-a-github-forked-repository"&gt;http://stackoverflow.com/questions/7244321/how-do-i-update-a-github-forked-repository&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title>Using Vi editor</title><description>&lt;h3 id="guideaudience"&gt;Guide Audience&lt;/h3&gt;
 
 &lt;p&gt;Not using Unix or Macbook Terminal because you are scared of &lt;code&gt;vi&lt;/code&gt; or &lt;code&gt;vim&lt;/code&gt;, this is the guide for you...!&lt;/p&gt;
 
