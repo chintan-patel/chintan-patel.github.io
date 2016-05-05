@@ -479,7 +479,7 @@ margin on the iframe, cause it breaks stuff. */
     position: relative;
     z-index: 10;
     min-height: 100%;
-    background: #fff;
+    background: url('../images/noise-red.jpg') repeat;
     -webkit-transition: -webkit-transform 0.5s ease;
             transition: transform 0.5s ease;
 }
@@ -1210,7 +1210,7 @@ body:not(.post-template) .post-title {
     height: 85px;
     min-height: 0;
     margin-bottom: 0;
-    background: transparent;
+    background: url('../images/noise-red.jpg') repeat;
 }
 
 .tag-head.main-header {
