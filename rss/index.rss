@@ -1,4 +1,4 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Passion</title><description>Stories, Tutorials, Tech updates and News</description><link>http://localhost:2368/</link><generator>Ghost 0.7</generator><lastBuildDate>Sat, 07 May 2016 02:42:45 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>How to create tag from git branch</title><description>&lt;p&gt;&lt;strong&gt;Checkout the git branch or hash which needs to be tagged&lt;/strong&gt;&lt;/p&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Passion</title><description>Stories, Tutorials, Tech updates and News</description><link>http://localhost:2368/</link><generator>Ghost 0.7</generator><lastBuildDate>Thu, 12 May 2016 13:09:00 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>How to create tag from git branch</title><description>&lt;p&gt;&lt;strong&gt;Checkout the git branch or hash which needs to be tagged&lt;/strong&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;git checkout &amp;lt;hash or branch&amp;gt;  
 &lt;/code&gt;&lt;/pre&gt;
@@ -468,6 +468,7 @@ matching-pattern
     &lt;th&gt;Node&lt;/th&gt;
     &lt;th&gt;Ruby&lt;/th&gt;
     &lt;th&gt;PHP&lt;/th&gt;
+    &lt;th&gt;Java&gt;&lt;/th&gt;
 &lt;/thead&gt;  
 &lt;tbody&gt;  
 &lt;tr&gt;  
@@ -475,31 +476,37 @@ matching-pattern
     &lt;td&gt;NPM&lt;/td&gt;
     &lt;td&gt;Bundle&lt;/td&gt;
     &lt;td&gt;Composer&lt;/td&gt;
+    &lt;td&gt;Maven&lt;/td&gt;
 &lt;/tr&gt;  
 &lt;tr&gt;  
     &lt;td&gt;Install dependencies&lt;/td&gt;
     &lt;td&gt;npm install&lt;/td&gt;
     &lt;td&gt;bundle install&lt;/td&gt;
     &lt;td&gt;composer.phar&lt;/td&gt;
+    &lt;td&gt;mvn install&lt;/td&gt;
 &lt;/tr&gt;  
 &lt;tr&gt;  
     &lt;td&gt;Dependency file&lt;/td&gt;
     &lt;td&gt;package.json&lt;/td&gt;
     &lt;td&gt;Gemfile&lt;/td&gt;
     &lt;td&gt;composer.json&lt;/td&gt;
+    &lt;td&gt;pom.xml&lt;/td&gt;
 &lt;/tr&gt;  
 &lt;tr&gt;  
     &lt;td&gt;Locking Dependencies&lt;/td&gt;
     &lt;td&gt;npm-shrinkwrap&lt;/td&gt;
     &lt;td&gt;Gemfile.lock&lt;/td&gt;
     &lt;td&gt;composer.lock&lt;/td&gt;
+    &lt;td&gt; - &lt;/td&gt;
 &lt;/tr&gt;  
 &lt;tr&gt;  
     &lt;td&gt;Public Repository&lt;/td&gt;
     &lt;td&gt;&lt;a href="https://www.npmjs.com"&gt;https://www.npmjs.com&lt;/a&gt;&lt;/td&gt;
     &lt;td&gt;&lt;a href="https://rubygems.org/"&gt;https://rubygems.org/&lt;/a&gt;&lt;/td&gt;
     &lt;td&gt;&lt;a href="https://packagist.org/"&gt;https://packagist.org/&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;  
+    &lt;td&gt;Distributed between different sources&lt;/td&gt;
+&lt;/tr&gt;
+
 &lt;/tbody&gt;  
 &lt;/table&gt;</content:encoded></item><item><title>About Me</title><description>&lt;p&gt;I am a Full-Stack Developer and geek who is well experienced with Mongo-Express-Angular-Node (MEAN) and Unix/Linux-Apache-MySQL-PHP (LAMP) stack. &lt;/p&gt;
 

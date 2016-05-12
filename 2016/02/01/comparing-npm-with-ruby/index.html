@@ -11,7 +11,7 @@
 
     <link rel="shortcut icon" href="../../../../favicon.ico">
 
-    <link rel="stylesheet" type="text/css" href="../../../../assets/css/screen.css?v=3bea41de01">
+    <link rel="stylesheet" type="text/css" href="../../../../assets/css/screen.css?v=620b73fa4c">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
 
     <link rel="canonical" href="index.html">
@@ -23,7 +23,7 @@
     <meta property="og:description" content="Comparing the package manager for Node, Ruby and PHP, includes, default public repository, dependency command, dependency lock, etc.">
     <meta property="og:url" content="http://localhost:2368/2016/02/01/comparing-npm-with-ruby/">
     <meta property="article:published_time" content="2016-02-02T04:38:34.681Z">
-    <meta property="article:modified_time" content="2016-02-16T04:16:19.550Z">
+    <meta property="article:modified_time" content="2016-05-12T13:08:40.339Z">
     <meta property="article:tag" content="npm">
     <meta property="article:tag" content="bundler">
     <meta property="article:tag" content="composer">
@@ -49,7 +49,7 @@
     "headline": "compare package manager",
     "url": "http://localhost:2368/2016/02/01/comparing-npm-with-ruby/",
     "datePublished": "2016-02-02T04:38:34.681Z",
-    "dateModified": "2016-02-16T04:16:19.550Z",
+    "dateModified": "2016-05-12T13:08:40.339Z",
     "keywords": "npm, bundler, composer",
     "description": "Comparing the package manager for Node, Ruby and PHP, includes, default public repository, dependency command, dependency lock, etc."
 }
@@ -112,6 +112,7 @@
     <th>Node</th>
     <th>Ruby</th>
     <th>PHP</th>
+    <th>Java&gt;</th>
 </thead>  
 <tbody>  
 <tr>  
@@ -119,31 +120,37 @@
     <td>NPM</td>
     <td>Bundle</td>
     <td>Composer</td>
+    <td>Maven</td>
 </tr>  
 <tr>  
     <td>Install dependencies</td>
     <td>npm install</td>
     <td>bundle install</td>
     <td>composer.phar</td>
+    <td>mvn install</td>
 </tr>  
 <tr>  
     <td>Dependency file</td>
     <td>package.json</td>
     <td>Gemfile</td>
     <td>composer.json</td>
+    <td>pom.xml</td>
 </tr>  
 <tr>  
     <td>Locking Dependencies</td>
     <td>npm-shrinkwrap</td>
     <td>Gemfile.lock</td>
     <td>composer.lock</td>
+    <td> - </td>
 </tr>  
 <tr>  
     <td>Public Repository</td>
     <td><a href="https://www.npmjs.com">https://www.npmjs.com</a></td>
     <td><a href="https://rubygems.org/">https://rubygems.org/</a></td>
     <td><a href="https://packagist.org/">https://packagist.org/</a></td>
-</tr>  
+    <td>Distributed between different sources</td>
+</tr>
+
 </tbody>  
 </table>
         </section>
@@ -233,7 +240,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   ga('send', 'pageview');
 </script>
 
-    <script type="text/javascript" src="../../../../assets/js/jquery.fitvids.js?v=3bea41de01"></script>
-    <script type="text/javascript" src="../../../../assets/js/index.js?v=3bea41de01"></script>
+    <script type="text/javascript" src="../../../../assets/js/jquery.fitvids.js?v=620b73fa4c"></script>
+    <script type="text/javascript" src="../../../../assets/js/index.js?v=620b73fa4c"></script>
 
 </body>
