@@ -1,4 +1,4 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Passion</title><description>Stories, Tutorials, Tech updates and News</description><link>http://localhost:2368/</link><generator>Ghost 0.7</generator><lastBuildDate>Thu, 12 May 2016 13:09:00 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>How to create tag from git branch</title><description>&lt;p&gt;&lt;strong&gt;Checkout the git branch or hash which needs to be tagged&lt;/strong&gt;&lt;/p&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Passion</title><description>Stories, Tutorials, Tech updates and News</description><link>http://localhost:2368/</link><generator>Ghost 0.7</generator><lastBuildDate>Thu, 12 May 2016 13:23:35 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>How to create tag from git branch</title><description>&lt;p&gt;&lt;strong&gt;Checkout the git branch or hash which needs to be tagged&lt;/strong&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;git checkout &amp;lt;hash or branch&amp;gt;  
 &lt;/code&gt;&lt;/pre&gt;
@@ -468,7 +468,7 @@ matching-pattern
     &lt;th&gt;Node&lt;/th&gt;
     &lt;th&gt;Ruby&lt;/th&gt;
     &lt;th&gt;PHP&lt;/th&gt;
-    &lt;th&gt;Java&gt;&lt;/th&gt;
+    &lt;th&gt;Java&lt;/th&gt;
 &lt;/thead&gt;  
 &lt;tbody&gt;  
 &lt;tr&gt;  
