@@ -1,4 +1,4 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Passion</title><description>Stories, Tutorials, Tech updates and News</description><link>http://localhost:2368/</link><generator>Ghost 0.7</generator><lastBuildDate>Thu, 12 May 2016 13:23:35 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>How to create tag from git branch</title><description>&lt;p&gt;&lt;strong&gt;Checkout the git branch or hash which needs to be tagged&lt;/strong&gt;&lt;/p&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Passion</title><description>Stories, Tutorials, Tech updates and News</description><link>http://localhost:2368/</link><generator>Ghost 0.7</generator><lastBuildDate>Fri, 10 Jun 2016 17:57:37 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>How to create tag from git branch</title><description>&lt;p&gt;&lt;strong&gt;Checkout the git branch or hash which needs to be tagged&lt;/strong&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;git checkout &amp;lt;hash or branch&amp;gt;  
 &lt;/code&gt;&lt;/pre&gt;
@@ -327,6 +327,7 @@
 &lt;li&gt;&lt;a href="http://localhost:2368/2016/02/03/basic-unix-commands-for-geek/#watch"&gt;watch&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://localhost:2368/2016/02/03/basic-unix-commands-for-geek/#top"&gt;top&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://localhost:2368/2016/02/03/basic-unix-commands-for-geek/#tree"&gt;tree&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2016/02/03/basic-unix-commands-for-geek/#curl"&gt;curl&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id="hostname"&gt;hostname&lt;/h2&gt;
@@ -422,6 +423,24 @@ touch new_file
 &lt;p&gt;It will generate a tree view for directories and files with level 2&lt;/p&gt;
 
 &lt;p&gt;Install via &lt;code&gt;brew install tree&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id="curl"&gt;curl&lt;/h2&gt;
+
+&lt;p&gt;Say it loud &lt;code&gt;curl&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This command helps to create the request to the URL or to the RESTful Endpoint.&lt;/p&gt;
+
+&lt;p&gt;Install via &lt;code&gt;brew install curl&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;curl -v -H "Content-type: application/json" -H "Authorization: BEARER xxxxxx" &amp;lt;RESTful endpoint or any URL&amp;gt;  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-v&lt;/code&gt; - Verbose mode&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-H&lt;/code&gt; - Set Headers on request&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Also, try to see more options via &lt;code&gt;curl --help&lt;/code&gt;&lt;/p&gt;
 
 &lt;h1 id="advanced"&gt;Advanced&lt;/h1&gt;
 
