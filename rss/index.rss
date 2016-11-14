@@ -1,65 +1,4 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Passion</title><description>Stories, Tutorials, Tech updates and News</description><link>http://localhost:2368/</link><generator>Ghost 0.7</generator><lastBuildDate>Fri, 10 Jun 2016 17:57:37 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>How to create tag from git branch</title><description>&lt;p&gt;&lt;strong&gt;Checkout the git branch or hash which needs to be tagged&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;git checkout &amp;lt;hash or branch&amp;gt;  
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;Checkout a branch or git hash&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;git tag -a "v1.0" -m "Creating the tag"  
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;push all the tags to the repository&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;git push --tags  
-&lt;/code&gt;&lt;/pre&gt;</description><link>http://localhost:2368/2016/05/04/how-to-create-tag-from-git-branch/</link><guid isPermaLink="false">6f59e84e-42c9-4d2b-85de-6ac7fa21ce0b</guid><category>git</category><category>git tag</category><dc:creator>Chintan Patel</dc:creator><pubDate>Thu, 05 May 2016 02:22:47 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Checkout the git branch or hash which needs to be tagged&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;git checkout &amp;lt;hash or branch&amp;gt;  
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;Checkout a branch or git hash&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;git tag -a "v1.0" -m "Creating the tag"  
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;push all the tags to the repository&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;git push --tags  
-&lt;/code&gt;&lt;/pre&gt;</content:encoded></item><item><title>How to update the stale git fork</title><description>&lt;p&gt;To contribute to the git repository, you must be forking that repository under your account.&lt;/p&gt;
-
-&lt;p&gt;For first time when you contribute and create the Pull Request the branches of parent and your repository are in sync. But what happens when the parent repository is updated and your forked repository is&lt;/p&gt;</description><link>http://localhost:2368/2016/05/04/updating-the-git-fork/</link><guid isPermaLink="false">d7383fa2-920d-4a89-a799-d469a708c8cb</guid><category>git</category><category>git fork</category><dc:creator>Chintan Patel</dc:creator><pubDate>Thu, 05 May 2016 02:12:05 GMT</pubDate><content:encoded>&lt;p&gt;To contribute to the git repository, you must be forking that repository under your account.&lt;/p&gt;
-
-&lt;p&gt;For first time when you contribute and create the Pull Request the branches of parent and your repository are in sync. But what happens when the parent repository is updated and your forked repository is out-of-date?&lt;/p&gt;
-
-&lt;p&gt;There are two ways to update the fork:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://localhost:2368/2016/05/04/updating-the-git-fork/#usinggithub"&gt;Using Github&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://localhost:2368/2016/05/04/updating-the-git-fork/#usinggitcli"&gt;Using git cli&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id="usinggithub"&gt;Using Github,&lt;/h4&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Create a Pull Request  &lt;/li&gt;
-&lt;li&gt;Under Comparing changes view, do following changes: &lt;br&gt;
-&lt;ul&gt;&lt;li&gt;Change "base fork" to your repository with &lt;code&gt;develop&lt;/code&gt; or whatever branch required.&lt;/li&gt;
-&lt;li&gt;Change "head fork" to parent repository with &lt;code&gt;develop&lt;/code&gt; or whatever branch required.&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Create Pull Request  &lt;/li&gt;
-&lt;li&gt;Merge the changes after proper verification and approval.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id="usinggitcli"&gt;Using &lt;code&gt;git cli&lt;/code&gt;&lt;/h4&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Go to the repository and checkout the &lt;code&gt;develop&lt;/code&gt; branch.  &lt;/li&gt;
-&lt;li&gt;Update the branch - &lt;code&gt;git pull origin develop&lt;/code&gt;  &lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git pull https://github.com/otheruser/repo.git develop&lt;/code&gt;  &lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git push origin develop&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h6 id="reference"&gt;Reference:&lt;/h6&gt;
-
-&lt;p&gt;&lt;a href="http://stackoverflow.com/questions/7244321/how-do-i-update-a-github-forked-repository"&gt;http://stackoverflow.com/questions/7244321/how-do-i-update-a-github-forked-repository&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title>Using Vi editor</title><description>&lt;h3 id="guideaudience"&gt;Guide Audience&lt;/h3&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Passion</title><description>Stories, Tutorials, Tech updates and News</description><link>http://localhost:2368/</link><generator>Ghost 0.7</generator><lastBuildDate>Tue, 03 May 2016 02:26:35 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Using Vi editor</title><description>&lt;h3 id="guideaudience"&gt;Guide Audience&lt;/h3&gt;
 
 &lt;p&gt;Not using Unix or Macbook Terminal because you are scared of &lt;code&gt;vi&lt;/code&gt; or &lt;code&gt;vim&lt;/code&gt;, this is the guide for you...!&lt;/p&gt;
 
@@ -69,7 +8,7 @@
 
 &lt;h3 id="modesinvi"&gt;Modes in vi&lt;/h3&gt;
 
-&lt;p&gt;There are&lt;/p&gt;</description><link>http://localhost:2368/2016/03/27/using-vi-editor/</link><guid isPermaLink="false">47d153e6-2b9f-4fa9-964a-cd124f51399b</guid><category>vim</category><category>vi command mode</category><category>vi insert mode</category><category>vi visual mode</category><dc:creator>Chintan Patel</dc:creator><pubDate>Mon, 28 Mar 2016 03:41:30 GMT</pubDate><content:encoded>&lt;h3 id="guideaudience"&gt;Guide Audience&lt;/h3&gt;
+&lt;p&gt;There are&lt;/p&gt;</description><link>http://localhost:2368/2016/03/27/using-vi-editor/</link><guid isPermaLink="false">47d153e6-2b9f-4fa9-964a-cd124f51399b</guid><dc:creator>Chintan Patel</dc:creator><pubDate>Mon, 28 Mar 2016 03:41:30 GMT</pubDate><content:encoded>&lt;h3 id="guideaudience"&gt;Guide Audience&lt;/h3&gt;
 
 &lt;p&gt;Not using Unix or Macbook Terminal because you are scared of &lt;code&gt;vi&lt;/code&gt; or &lt;code&gt;vim&lt;/code&gt;, this is the guide for you...!&lt;/p&gt;
 
@@ -293,7 +232,7 @@
 
 &lt;/tbody&gt;
 
-&lt;/table&gt;</content:encoded></item><item><title>Basic Unix Commands for Geek</title><description>Blog is about basic unix commands which every developer must know. These commands will make you feel better and more professional.</description><link>http://localhost:2368/2016/02/03/basic-unix-commands-for-geek/</link><guid isPermaLink="false">8e4f6c3a-82a8-4d0f-8c8e-fd825420553f</guid><category>unix</category><category>commands</category><category>vi editor</category><category>tree</category><category>word count</category><category>rimraf</category><category>grep</category><category>find files</category><category>list directory</category><dc:creator>Chintan Patel</dc:creator><pubDate>Thu, 04 Feb 2016 03:56:41 GMT</pubDate><content:encoded>&lt;h1 id="introduction"&gt;Introduction&lt;/h1&gt;
+&lt;/table&gt;</content:encoded></item><item><title>Basic Unix Commands for Geek</title><description>Blog is about basic unix commands which every developer must know. These commands will make you feel better and more professional.</description><link>http://localhost:2368/2016/02/03/basic-unix-commands-for-geek/</link><guid isPermaLink="false">8e4f6c3a-82a8-4d0f-8c8e-fd825420553f</guid><category>unix</category><category>commands</category><category>vi editor</category><dc:creator>Chintan Patel</dc:creator><pubDate>Thu, 04 Feb 2016 03:56:41 GMT</pubDate><content:encoded>&lt;h1 id="introduction"&gt;Introduction&lt;/h1&gt;
 
 &lt;p&gt;This document requires intermediate level of shell commands knowledge. For starters visit &lt;a href="http://mally.stanford.edu/~sr/computing/basic-unix.html"&gt;http://mally.stanford.edu/~sr/computing/basic-unix.html&lt;/a&gt;&lt;/p&gt;
 
@@ -327,7 +266,6 @@
 &lt;li&gt;&lt;a href="http://localhost:2368/2016/02/03/basic-unix-commands-for-geek/#watch"&gt;watch&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://localhost:2368/2016/02/03/basic-unix-commands-for-geek/#top"&gt;top&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://localhost:2368/2016/02/03/basic-unix-commands-for-geek/#tree"&gt;tree&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://localhost:2368/2016/02/03/basic-unix-commands-for-geek/#curl"&gt;curl&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id="hostname"&gt;hostname&lt;/h2&gt;
@@ -424,24 +362,6 @@ touch new_file
 
 &lt;p&gt;Install via &lt;code&gt;brew install tree&lt;/code&gt;&lt;/p&gt;
 
-&lt;h2 id="curl"&gt;curl&lt;/h2&gt;
-
-&lt;p&gt;Say it loud &lt;code&gt;curl&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;This command helps to create the request to the URL or to the RESTful Endpoint.&lt;/p&gt;
-
-&lt;p&gt;Install via &lt;code&gt;brew install curl&lt;/code&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;curl -v -H "Content-type: application/json" -H "Authorization: BEARER xxxxxx" &amp;lt;RESTful endpoint or any URL&amp;gt;  
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;-v&lt;/code&gt; - Verbose mode&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;-H&lt;/code&gt; - Set Headers on request&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Also, try to see more options via &lt;code&gt;curl --help&lt;/code&gt;&lt;/p&gt;
-
 &lt;h1 id="advanced"&gt;Advanced&lt;/h1&gt;
 
 &lt;h2 id="combinefindandgrepcommand"&gt;Combine find and grep command&lt;/h2&gt;
@@ -487,7 +407,6 @@ matching-pattern
     &lt;th&gt;Node&lt;/th&gt;
     &lt;th&gt;Ruby&lt;/th&gt;
     &lt;th&gt;PHP&lt;/th&gt;
-    &lt;th&gt;Java&lt;/th&gt;
 &lt;/thead&gt;  
 &lt;tbody&gt;  
 &lt;tr&gt;  
@@ -495,47 +414,41 @@ matching-pattern
     &lt;td&gt;NPM&lt;/td&gt;
     &lt;td&gt;Bundle&lt;/td&gt;
     &lt;td&gt;Composer&lt;/td&gt;
-    &lt;td&gt;Maven&lt;/td&gt;
 &lt;/tr&gt;  
 &lt;tr&gt;  
     &lt;td&gt;Install dependencies&lt;/td&gt;
     &lt;td&gt;npm install&lt;/td&gt;
     &lt;td&gt;bundle install&lt;/td&gt;
     &lt;td&gt;composer.phar&lt;/td&gt;
-    &lt;td&gt;mvn install&lt;/td&gt;
 &lt;/tr&gt;  
 &lt;tr&gt;  
     &lt;td&gt;Dependency file&lt;/td&gt;
     &lt;td&gt;package.json&lt;/td&gt;
     &lt;td&gt;Gemfile&lt;/td&gt;
     &lt;td&gt;composer.json&lt;/td&gt;
-    &lt;td&gt;pom.xml&lt;/td&gt;
 &lt;/tr&gt;  
 &lt;tr&gt;  
     &lt;td&gt;Locking Dependencies&lt;/td&gt;
     &lt;td&gt;npm-shrinkwrap&lt;/td&gt;
     &lt;td&gt;Gemfile.lock&lt;/td&gt;
     &lt;td&gt;composer.lock&lt;/td&gt;
-    &lt;td&gt; - &lt;/td&gt;
 &lt;/tr&gt;  
 &lt;tr&gt;  
     &lt;td&gt;Public Repository&lt;/td&gt;
     &lt;td&gt;&lt;a href="https://www.npmjs.com"&gt;https://www.npmjs.com&lt;/a&gt;&lt;/td&gt;
     &lt;td&gt;&lt;a href="https://rubygems.org/"&gt;https://rubygems.org/&lt;/a&gt;&lt;/td&gt;
     &lt;td&gt;&lt;a href="https://packagist.org/"&gt;https://packagist.org/&lt;/a&gt;&lt;/td&gt;
-    &lt;td&gt;Distributed between different sources&lt;/td&gt;
-&lt;/tr&gt;
-
+&lt;/tr&gt;  
 &lt;/tbody&gt;  
 &lt;/table&gt;</content:encoded></item><item><title>About Me</title><description>&lt;p&gt;I am a Full-Stack Developer and geek who is well experienced with Mongo-Express-Angular-Node (MEAN) and Unix/Linux-Apache-MySQL-PHP (LAMP) stack. &lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#portfolio"&gt;Portfolio&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#breakingtheice"&gt;Breaking the Ice&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#mynetworks"&gt;My Networks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#breaking-the-ice"&gt;Breaking the Ice&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#my-networks"&gt;My Networks&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#methodology"&gt;Methodology&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#workexperience"&gt;Work Experience&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#otherexperiences"&gt;Other Experiences&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#work-experience"&gt;Work Experience&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#other-experiences"&gt;Other Experiences&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id="portfolio"&gt;Portfolio&lt;/h2&gt;
@@ -547,11 +460,11 @@ We build a application which shows different images based on&lt;/p&gt;</descript
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#portfolio"&gt;Portfolio&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#breakingtheice"&gt;Breaking the Ice&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#mynetworks"&gt;My Networks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#breaking-the-ice"&gt;Breaking the Ice&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#my-networks"&gt;My Networks&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#methodology"&gt;Methodology&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#workexperience"&gt;Work Experience&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#otherexperiences"&gt;Other Experiences&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#work-experience"&gt;Work Experience&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://localhost:2368/2015/12/21/chintan-patel-resume/#other-experiences"&gt;Other Experiences&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id="portfolio"&gt;Portfolio&lt;/h2&gt;
@@ -566,20 +479,15 @@ We build a application which shows different images based on the distance data. 
 &lt;p&gt;&lt;strong&gt;at &lt;a href="https://twitter.com/orlandodevs"&gt;#OrlandoDevs&lt;/a&gt; React Hack Night&lt;/strong&gt; &lt;br&gt;
 We tried to build a simple voting application using ReactJS. This application uses React, NodeJS and Express.&lt;/p&gt;
 
-&lt;h6 id="socialsentimentanalyzerangular1httpsgithubcomchintanpatelsocialsentianalyzer"&gt;&lt;a href="https://github.com/chintan-patel/social-senti-analyzer"&gt;Social Sentiment Analyzer - Angular 1&lt;/a&gt;&lt;/h6&gt;
+&lt;h6 id="socialsentimentanalyzerng1httpsgithubcomchintanpatelsocialsentianalyzer"&gt;&lt;a href="https://github.com/chintan-patel/social-senti-analyzer"&gt;Social Sentiment Analyzer - ng 1&lt;/a&gt;&lt;/h6&gt;
 
 &lt;p&gt;&lt;strong&gt;at NeoReach Hack&lt;/strong&gt; &lt;br&gt;
 We build an application which uses MEAN stack. The application requests a twitter hash, gets the most recent 100 tweets and based on each tweet, shows the graph of how positive/negative/neutral users' emotions are. The system uses MongoLabs, Express 4, Angular 1.5, D3 graphs and NodeJS. The data is stored in MongoDB for future comparison.&lt;/p&gt;
 
-&lt;h6 id="socialsentimentanalyzerangular2httpsgithubcomchintanpatelangular2demo"&gt;&lt;a href="https://github.com/chintan-patel/angular2-demo"&gt;Social Sentiment Analyzer - Angular 2&lt;/a&gt;&lt;/h6&gt;
+&lt;h6 id="socialsentimentanalyzerng2httpsgithubcomchintanpatelangular2demo"&gt;&lt;a href="https://github.com/chintan-patel/angular2-demo"&gt;Social Sentiment Analyzer - ng 2&lt;/a&gt;&lt;/h6&gt;
 
 &lt;p&gt;&lt;strong&gt;at Disney Angular 2 Hack Night&lt;/strong&gt; &lt;br&gt;
 This application is the same as mentioned in previous section. This project demonstrate use of Angular 2.&lt;/p&gt;
-
-&lt;h6 id="videostreamingapplicationhttpsgithubcomrupamroyvideeoos"&gt;&lt;a href="https://github.com/rupamroy/Videeoos"&gt;Video Streaming Application&lt;/a&gt;&lt;/h6&gt;
-
-&lt;p&gt;&lt;strong&gt;at Hack-a-thon&lt;/strong&gt; &lt;br&gt;
-The application allows user to upload the music and videos. The application was hosted on Angular 1, Amazon Web Services(AWS). EC2 instances, S3, Cloudfront, Transcoders and DynamoDB services.&lt;/p&gt;
 
 &lt;h2 id="breakingtheice"&gt;Breaking the Ice&lt;/h2&gt;
 
@@ -653,12 +561,10 @@ The application allows user to upload the music and videos. The application was 
 
 &lt;h2 id="mynetworks"&gt;My Networks&lt;/h2&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/chintan-patel"&gt;Github&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://twitter.com/chintspassion"&gt;Twitter&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.linkedin.com/in/chintspassion"&gt;LinkedIn&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.hackerrank.com/chintspassion"&gt;Hacker Rank&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;a href="https://github.com/chintan-patel"&gt;Github&lt;/a&gt;
+&lt;a href="https://twitter.com/chintspassion"&gt;Twitter&lt;/a&gt;
+&lt;a href="https://www.linkedin.com/in/chintspassion"&gt;LinkedIn&lt;/a&gt;
+&lt;a href="https://www.hackerrank.com/chintspassion"&gt;Hacker Rank&lt;/a&gt;&lt;/p&gt;
 
 &lt;h4 id="otherexperiences"&gt;Other Experiences&lt;/h4&gt;
 

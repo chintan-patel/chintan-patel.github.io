@@ -1,4 +1,3 @@
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,33 +10,27 @@
 
     <link rel="shortcut icon" href="../../../../favicon.ico">
 
-    <link rel="stylesheet" type="text/css" href="../../../../assets/css/screen.css?v=be76715d9b">
+    <link rel="stylesheet" type="text/css" href="../../../../assets/css/screen.css?v=b9b536d520">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
 
-    <link rel="canonical" href="index.html">
+    <link rel="canonical" href="http://www.kashcandi.com/2016/02/03/basic-unix-commands-for-geek/">
     <meta name="referrer" content="origin">
     
     <meta property="og:site_name" content="Passion">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Basic Unix Commands for Geek">
     <meta property="og:description" content="Blog is about basic unix commands which every developer must know. These commands will make you feel better and more professional.">
-    <meta property="og:url" content="http://localhost:2368/2016/02/03/basic-unix-commands-for-geek/">
+    <meta property="og:url" content="http://www.kashcandi.com/2016/02/03/basic-unix-commands-for-geek/">
     <meta property="article:published_time" content="2016-02-04T03:56:41.911Z">
-    <meta property="article:modified_time" content="2016-06-10T17:57:08.440Z">
+    <meta property="article:modified_time" content="2016-02-16T01:56:48.968Z">
     <meta property="article:tag" content="unix">
     <meta property="article:tag" content="commands">
-    <meta property="article:tag" content="vi editor">
-    <meta property="article:tag" content="tree">
-    <meta property="article:tag" content="word count">
-    <meta property="article:tag" content="rimraf">
-    <meta property="article:tag" content="grep">
-    <meta property="article:tag" content="find files">
-    <meta property="article:tag" content="list directory">
+    <meta property="article:tag" content="vim">
     
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Basic Unix Commands for Geek">
     <meta name="twitter:description" content="Blog is about basic unix commands which every developer must know. These commands will make you feel better and more professional.">
-    <meta name="twitter:url" content="http://localhost:2368/2016/02/03/basic-unix-commands-for-geek/">
+    <meta name="twitter:url" content="http://www.kashcandi.com/2016/02/03/basic-unix-commands-for-geek/">
     
     <script type="application/ld+json">
 {
@@ -48,30 +41,23 @@
         "@type": "Person",
         "name": "Chintan Patel",
         "image": "//www.gravatar.com/avatar/879b5f8b4f08f869d10804a35b63e87c?s=250&d=mm&r=x",
-        "url": "http://localhost:2368/author/chintan-patel",
+        "url": "http://www.kashcandi.com/author/chintan-patel",
         "sameAs": "https://github.com/chintan-patel",
         "description": null
     },
     "headline": "Basic Unix Commands for Geek",
-    "url": "http://localhost:2368/2016/02/03/basic-unix-commands-for-geek/",
+    "url": "http://www.kashcandi.com/2016/02/03/basic-unix-commands-for-geek/",
     "datePublished": "2016-02-04T03:56:41.911Z",
-    "dateModified": "2016-06-10T17:57:08.440Z",
-    "keywords": "unix, commands, vi editor, tree, word count, rimraf, grep, find files, list directory",
+    "dateModified": "2016-02-16T01:56:48.968Z",
+    "keywords": "unix, commands, vim",
     "description": "Blog is about basic unix commands which every developer must know. These commands will make you feel better and more professional."
 }
     </script>
 
     <meta name="generator" content="Ghost 0.7">
-    <link rel="alternate" type="application/rss+xml" title="Passion" href="../../../../rss/index.html">
-    <script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-8284264193118335",
-    enable_page_level_ads: true
-  });
-</script>
+    <link rel="alternate" type="application/rss+xml" title="Passion" href="http://www.kashcandi.com/rss/">
 </head>
-<body class="post-template tag-unix tag-commands tag-vi-editor tag-tree tag-word-count tag-rimraf tag-grep tag-find-files tag-list-directory nav-closed">
+<body class="post-template tag-unix tag-commands tag-vi-editor nav-closed">
 
     <div class="nav">
     <h3 class="nav-title">Menu</h3>
@@ -79,10 +65,12 @@
         <span class="hidden">Close</span>
     </a>
     <ul>
-            <li class="nav-home" role="presentation"><a href="http://kashcandi.com/">Home</a></li>
-            <li class="nav-about-me" role="presentation"><a href="http://kashcandi.com/2015/12/21/chintan-patel-resume/">About Me</a></li>
+            <li class="nav-home" role="presentation"><a href="http://www.kashcandi.com/">Home</a></li>
+            <li class="nav-comparing-package-managers" role="presentation"><a href="http://www.kashcandi.com/comparing-npm-with-ruby/">Comparing Package Managers</a></li>
+            <li class="nav-about-me" role="presentation"><a href="http://www.kashcandi.com/chintan-patel-resume/">About Me</a></li>
     </ul>
-    <a class="subscribe-button icon-feed" href="../../../../rss/index.rss">Subscribe</a>
+    <a class="subscribe-button icon-feed" href="http://www.kashcandi.com/rss/">Subscribe</a>
+	<a class="twitter-timeline" href="https://twitter.com/chintspassion">Tweets by chintspassion</a> <script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
 <span class="nav-cover"></span>
 
@@ -100,12 +88,12 @@
 </header>
 
 <main class="content" role="main">
-    <article class="post tag-unix tag-commands tag-vi-editor tag-tree tag-word-count tag-rimraf tag-grep tag-find-files tag-list-directory">
+    <article class="post tag-unix tag-commands tag-vi-editor">
 
         <header class="post-header">
             <h1 class="post-title">Basic Unix Commands for Geek</h1>
             <section class="post-meta">
-                <time class="post-date" datetime="2016-02-03">03 February 2016</time>  on <a href="../../../../tag/unix/">unix</a>, <a href="../../../../tag/commands/">commands</a>, <a href="../../../../tag/vi-editor/">vi editor</a>, <a href="../../../../tag/tree/">tree</a>, <a href="../../../../tag/word-count/">word count</a>, <a href="../../../../tag/rimraf/">rimraf</a>, <a href="../../../../tag/grep/">grep</a>, <a href="../../../../tag/find-files/">find files</a>, <a href="../../../../tag/list-directory/">list directory</a>
+                <time class="post-date" datetime="2016-02-03">03 February 2016</time>  on <a href="../../../../tag/unix/">unix</a>, <a href="../../../../tag/commands/">commands</a>, <a href="../../../../tag/vi-editor/">vim</a>
             </section>
         </header>
 
@@ -144,7 +132,6 @@
 <li><a href="index.html#watch">watch</a></li>
 <li><a href="index.html#top">top</a></li>
 <li><a href="index.html#tree">tree</a></li>
-<li><a href="index.html#curl">curl</a></li>
 </ul>
 
 <h2 id="hostname">hostname</h2>
@@ -241,24 +228,6 @@ touch new_file
 
 <p>Install via <code>brew install tree</code></p>
 
-<h2 id="curl">curl</h2>
-
-<p>Say it loud <code>curl</code></p>
-
-<p>This command helps to create the request to the URL or to the RESTful Endpoint.</p>
-
-<p>Install via <code>brew install curl</code></p>
-
-<pre><code>curl -v -H "Content-type: application/json" -H "Authorization: BEARER xxxxxx" &lt;RESTful endpoint or any URL&gt;  
-</code></pre>
-
-<ul>
-<li><code>-v</code> - Verbose mode</li>
-<li><code>-H</code> - Set Headers on request</li>
-</ul>
-
-<p>Also, try to see more options via <code>curl --help</code></p>
-
 <h1 id="advanced">Advanced</h1>
 
 <h2 id="combinefindandgrepcommand">Combine find and grep command</h2>
@@ -319,13 +288,13 @@ matching-pattern
 
             <section class="share">
                 <h4>Share this post</h4>
-                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=Basic%20Unix%20Commands%20for%20Geek&amp;url=http://localhost:2368/2016/02/03/basic-unix-commands-for-geek/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=Basic%20Unix%20Commands%20for%20Geek&amp;url=http://www.kashcandi.com/2016/02/03/basic-unix-commands-for-geek/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                     <span class="hidden">Twitter</span>
                 </a>
-                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/2016/02/03/basic-unix-commands-for-geek/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://www.kashcandi.com/2016/02/03/basic-unix-commands-for-geek/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                     <span class="hidden">Facebook</span>
                 </a>
-                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://localhost:2368/2016/02/03/basic-unix-commands-for-geek/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://www.kashcandi.com/2016/02/03/basic-unix-commands-for-geek/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
                     <span class="hidden">Google+</span>
                 </a>
             </section>
@@ -334,57 +303,45 @@ matching-pattern
 
     </article>
 </main>
-
 <aside class="read-next">
-    <a class="read-next-story no-cover" href="../../../03/27/using-vi-editor/">
+    <a class="read-next-story no-cover" href="../../16/using-vi-editor/">
         <section class="post">
-            <h2>Using Vi editor</h2>
+            <h2>Using Vi Editor  (vim)</h2>
             <p>Guide Audience Not using Unix or Macbook Terminal because you are scared of vi or vim, this is the…</p>
         </section>
     </a>
     <a class="read-next-story prev no-cover" href="../../01/comparing-npm-with-ruby/">
         <section class="post">
             <h2>Comparing Package manager</h2>
-            <p>Following is the comparison in the different language:                  Node     Ruby     PHP     Java              Package Manager     NPM     Bundle     Composer     Maven           Install…</p>
+            <p>Following is the comparison in the different language:                  Node     Ruby     PHP              Package Manager     NPM     Bundle     Composer           Install dependencies     npm…</p>
         </section>
     </a>
 </aside>
 
 
-
 		<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8284264193118335" data-ad-slot="3443310401" data-ad-format="auto"></ins>
         <footer class="site-footer clearfix">
-            <section class="copyright"><a href="../../../../">Passion</a> © 2016</section>
+            <section class="copyright"><a href="http://www.kashcandi.com">Passion</a> © 2016</section>
         </footer>
 
     </div>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <!-- Google Tag Manager -->
-<noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-TZKQZX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-TZKQZX');</script>
-<!-- End Google Tag Manager -->
-<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Ad Blog -->
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8284264193118335" data-ad-slot="3443310401" data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<script>
+    <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
   ga('create', 'UA-18091262-2', 'auto');
   ga('send', 'pageview');
 </script>
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Ad Blog -->
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
-    <script type="text/javascript" src="../../../../assets/js/jquery.fitvids.js?v=be76715d9b"></script>
-    <script type="text/javascript" src="../../../../assets/js/index.js?v=be76715d9b"></script>
+    <script type="text/javascript" src="../../../../assets/js/jquery.fitvids.js?v=b9b536d520"></script>
+    <script type="text/javascript" src="../../../../assets/js/index.js?v=b9b536d520"></script>
 
 </body>
